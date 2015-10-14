@@ -1,0 +1,86 @@
+body {
+	color: rgb(241,241,241);
+	font-family: "Microsoft YaHei UI Light";
+	margin: 0;
+	height: 100%;
+	padding-bottom: 40px;
+}
+p {
+	font-family: "Microsoft YaHei UI Light";
+	font-size: 16px;
+	color: white;
+}
+h1 {
+	font-size: 70px;
+    font-family: "Arial";
+    font-weight: normal;
+    line-height: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+h2 {
+	font-family: "Microsoft YaHei UI Light";
+	font-size: 22px;
+	font-weight: normal;
+	color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+h3 {
+	font-family: "Microsoft YaHei UI Light";
+	font-size: 22px;
+	font-weight: normal;
+	color: black;
+}
+h4 {
+	font-family: "Microsoft YaHei UI Light";
+	font-size: 22px;
+	font-weight: normal;
+	color: white;
+}
+.my-website-section {
+	text-align: center;
+	height: 100%;
+	background-color: salmon;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('Lions Hike.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.profile-pic {
+	width: 30%;
+	border-radius: 150px;
+	box-shadow: 2px 2px 3px #000000;
+}
+.main__content {
+	text-align: center;
+}
+.resume-section {
+	color: black;
+	background-color: white;
+	overflow: hidden;
+	padding: 0 5% 2%;
+}
+.contact__section {
+	color: #323232;
+	padding: 0 5% 2%;
+}
+.my-website-div {
+	color: white;
+}
+.contact__section {
+	color: white;
+	background-color: #323232;
+	overflow: hidden;
+}
+.contact__link {
+	color: #0783B6;
+	font-size: 18px;
+	font-family: "Microsoft YaHei UI Light", serif;
+}
+.entry p a {
+	position: relative;
+	float: left;
+	cursor: pointer;
+}
