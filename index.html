@@ -1,39 +1,198 @@
+
+<!DOCTYPE html>
 <html>
-	<head>
-		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-		<title>Tara Yuen</title>
-		<link rel="stylesheet" href="main.css" />
-		<meta charset="utf-8">
-	</head>
-	
-	<body>
-		<section class="my-website-section">
-			<div class="my-website-div">
-				<img src="BusinessPicture.JPG" class="profile-pic"/>
-				<h1> T A R A &nbsp; Y U E N </h1>
-				<h2> Systems Design Engineering | University of Waterloo </h2>
-				<h2> Adventurist and Designer </h2>
-			</div>
-		</section>
-		<section class="resume-section">
-			<div>
-			<h3>Resume</h3>
-			<a href="Resume_Tara_Yuen.pdf"><img src="Resume_Tara_Yuen.jpg" class="resume-pic" width="200px"/></a>
-      		</div>
-		</section>
-		<footer class="contact__section">
-      		<h4 class="contact__title">Contact</h4>
-      		<p>Phone: +1 (778) 242 8804</p>
-      		<div class="contact__email">
-       		<p>Email: <a href="mailto:tara.yuen@uwaterloo.ca" target="_top" class="contact__link">tara.yuen@uwaterloo.ca</a> </p>
-      		</div>
-      		<div class="contact_linkedin">
-      		<p>LinkedIn: <a href="https://ca.linkedin.com/pub/tara-yuen/69/208/859" style="text-decoration:none;"><span style="font: 18px 'Lato', sans-serif; color:#0783B6;"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View my LinkedIn profile" style="vertical-align:middle;" border="0">&nbsp;View my profile</span></a> </p>
-      		<pre> </pre>
-      		<div class="copyright">
-      		<p style="font-size: 12px">&copy; 2015 Tara Yuen.</p>
-      		</div>
-    	</footer>
-  	</body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tara Yuen</title>
+  <link rel="shortcut icon" href="img/ty.ico"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <div class="loader"></div>
+
+  <!-- Navbar -->
+  <nav id="navbar-custom" class="navbar navbar-default navbar-fixed-top navbar-transparent">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#mountains">TARA</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a title="Resume" href="resume.pdf" target="_blank"><i class="fa fa-file-text fa-lg"></i></a></li>
+          <li><a title="LinkedIn" href="https://ca.linkedin.com/in/tarayuen" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a></li>
+          <li><a title="GitHub" href="https://github.com/tarayuen" target="_blank"><i id="github" class="fa fa-github fa-lg"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="parallax" data-spy="scroll" data-target=".navbar" data-offset="50">
+    
+    <!-- First Section -->
+    <div id="mountains" class="parallax-group">
+      <div class="parallax-layer parallax-layer-back"></div>
+      <div class="parallax-layer parallax-layer-1"></div>
+      <div class="parallax-layer parallax-layer-2"></div>
+      <div class="parallax-layer parallax-layer-3"></div>
+      <div class="parallax-layer parallax-layer-4"></div>
+      <div class="parallax-layer parallax-layer-5"></div>
+      <div class="parallax-layer parallax-layer-base">
+        <div class="container">
+          <img src="img/Profile.jpg">
+          <h1 id="animation" class="animated fadeInDownBig">Tara Yuen</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="parallax-group">
+      <div class="parallax-layer parallax-layer-base">
+        <div class="container">
+          <h1 class="animated fadeIn">About Me</h1>
+          <p>
+            I'm attending the University of Waterloo to study Systems Design Engineering. I love programming, designing, and innovating, striving to become and engineer and entrepreneur. In my spare time I enjoy sailing, skiing, hiking, and going on travel adventures!
+          </p>
+          <a class="btn btn-success" role="button" title="Cell" href="tel:+17782428804"><span class="glyphicon glyphicon-earphone"></span> 778.242.8804</a>
+          <a class="btn btn-success" role="button" title="Email" href="mailto:tara.yuen@uwaterloo.ca">
+            <span class="glyphicon glyphicon-envelope"></span>
+            tara.yuen@uwaterloo.ca
+          </a>
+          <div class="flex-container">
+            <div><img src="img/EagleBluffs.jpg"><span id="image-text">Eagle Bluffs, BC</span></div>
+            <div><img src="img/Class.jpg"><span id="image-text">Systems Design Engineering Class of 2020</span></div>
+            <div><img src="img/GDC-4.jpg"><span id="image-text">Game Design Camp at Stratford Campus</span></div>
+            <div><img src="img/BlueMountain.jpg"><span id="image-text">Blue Mountain, ON</span></div>
+            <div><img src="img/BlackTusk.jpg"><span id="image-text">Black Tusk, BC</span></div>
+            <div><img src="img/SanFran.jpg"><span id="image-text">San Francisco, CA</span></div>
+            <div><img src="img/ClassSplash.jpg"><span id="image-text">Systems Design Engineering Classes of 2018 and 2020</span></div>
+            <div><img src="img/Ottawa.jpg"><span id="image-text">Ottawa, ON</span></div>
+            <div><img src="img/Ulti.jpg"><span id="image-text">Waterloo, ON</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio" class="parallax-group">
+      <div class="parallax-layer parallax-layer-back"></div>
+      <div class="parallax-layer parallax-layer-base">
+        <div class="container">
+          <h1>Portfolio</h1>
+          <h2>Connect</h2>
+          <div class="connect flex-container">
+            <div class="flex-item">
+              <p>
+                Awarded 1st place at the UW Portal hackathon for creating our widget, Connect, that allows students to connect online in an accommodating atmosphere. We created this interactive widget to achieve the goal of increasing the portal's usage.
+              </p>
+            </div>
+            <a class="flex-item" href="https://uwaterloo.ca/student-success/blog/post/syde-chicks-rule-roost-portal-hackathon"><img class="shadow" src="img/Portal.png"></a>
+          </div>
+          <h2>Plan-It</h2>
+          <div class="planit flex-container">
+            <a class="flex-item" href="https://www.dropbox.com/sh/8tk9fs2ju6a6r15/AAC7uC6zVr5bCqWRsWGIvWm5a?dl=0"><img class="shadow" src="img/GDC.png"></a>
+            <div class="flex-item">
+              <p>
+                At the UW Game Design Camp hackathon we were awarded 3rd place for creating a one button game, Plan-It. The event was hosted by the University of Waterloo Stratford campus in partnership with the Stratford Accelerator Centre, Games Institute and Canadian Digital Media Network that allowed our game to be displayed on the three-storey Christie® MicroTiles® wall.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="parallax-group">
+      <div class="parallax-layer parallax-layer-base">
+        <div class="container">
+          <h1>Contact</h1>
+          <div class="well">
+            <!-- Contact Form -->
+            <form class="form-horizontal" role="form" method="post" action="https://formspree.io/tara.yuen@uwaterloo.ca">
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="name">Name:</label>
+                <div class="col-sm-10">
+                  <input name="name" id="name" type="text" class="form-control" placeholder="Your name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-10">
+                  <input name="_replyto" id="email" type="email" class="form-control" placeholder="Your email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="comment">Message:</label>
+                <div class="col-sm-10">
+                  <textarea name="comment" id="comment" type="text" class="form-control" rows="5"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="human">2 + 8 = ?</label>
+                <div class="col-sm-10">
+                  <input name="human" id="human" type="text" class="form-control" placeholder="Your Answer">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" value="Send" class="btn btn-default">Submit</button>
+                </div>
+              </div>
+              <input type="text" name="_gotcha" style="display:none" />
+              <input type="hidden" name="_subject" value="Website Contact Submission" />
+              <input type="hidden" name="_next" value="//site.io/thanks.html" />
+            </form> <!-- End Contact Form -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer" class="parallax-group">
+      <div class="parallax-layer parallax-layer-base flex-footer">
+        <div class="container">
+          <h2>Tara Yuen</h2>
+          <a class="btn btn-success btn-circle" role="button" title="Cell"  href="tel:+17782428804" ng-mouseover="showInfo('+17782428804')"><span class="glyphicon glyphicon-earphone"></span></a>
+          <a class="btn btn-success btn-circle" role="button" title="Email" href="mailto:tara.yuen@uwaterloo.ca" ng-mouseover="showInfo('tara.yuen@uwaterloo.ca')"><span class="glyphicon glyphicon-envelope"></span></a>
+          <a class="btn btn-success btn-circle" role="button" target="_blank" title="LinkedIn" href="https://ca.linkedin.com/in/tarayuen"><i class="fa fa-linkedin"></i></a>
+          <a class="btn btn-success btn-circle" role="button" target="_blank" title="GitHub" href="https://github.com/tarayuen"><i class="fa fa-github"></i></a>
+          <a class="btn btn-success btn-circle" role="button" target="_blank" title="Resume" href="resume.pdf"><i class="fa fa-file-text"></i></a>
+          <p id="contact-info">{{contactInfo}}</p> <!-- show contact info on hover -->
+        </div>
+      </div>
+    </div>
+    <div id="bottom" class="parallax-group">
+      <div class="parallax-layer parallax-layer-base">
+        <div class="container">
+          <p>&copy; 2016 Tara Yuen</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="scripts/scripts.js"></script>
+
+</body>
 </html>
-		
