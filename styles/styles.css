@@ -181,7 +181,7 @@ body {
 
 #about {
 	color: #212121;
-	height: 150vh;
+	height: 220vh;
 }
 #about a {
 	color: #FFFFFF;
@@ -205,6 +205,26 @@ body {
 #about h1 {
 	padding-top: 20px;
 }
+#about .subtitle {
+	color: #757575;
+	margin-bottom: 20px;
+}
+#about .description p {
+	/*text-align: left;*/
+	font-size: 18px;
+	padding-bottom: 15px;
+}
+#about .description p span {
+	color: #00BCD4;
+	font-weight: bold;
+	font-style: italic;
+}
+#about .description a {
+	margin-bottom: 40px;
+}
+/*#about .col-sm-5 a {
+	float: left;
+}*/
 #about .parallax-layer-base {
 	background-color: #F5F5F5;
 	background-size: 100%;
@@ -218,7 +238,7 @@ body {
   flex-flow: row wrap; 
   display: -webkit-box;
   display: flex;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 #about .flex-container div { 
   -webkit-box-flex: auto;
@@ -260,6 +280,18 @@ body {
 }
 #about .flex-container div img:hover + #image-text {
 	color: #FFFFFF;
+}
+#about .circle-progress {
+	text-align: center;
+}
+#about .skills {
+	text-align: center;
+}
+#about .skills p {
+	color: #757575;
+	font-size: 10px;
+	display: block;
+	padding-top: 70%;
 }
 
 /* portfolio */
@@ -517,6 +549,9 @@ body {
 
 	#about {
 		height: 300vh;
+	}
+	#about .skills p {
+		font-size: 16px;
 	}
 	#portfolio {
 		height: 200vh;
