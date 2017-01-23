@@ -210,7 +210,6 @@ body {
 	margin-bottom: 20px;
 }
 #about .description p {
-	/*text-align: left;*/
 	font-size: 18px;
 	padding-bottom: 15px;
 }
@@ -222,9 +221,6 @@ body {
 #about .description a {
 	margin-bottom: 40px;
 }
-/*#about .col-sm-5 a {
-	float: left;
-}*/
 #about .parallax-layer-base {
 	background-color: #F5F5F5;
 	background-size: 100%;
@@ -271,7 +267,7 @@ body {
 	left: 0;
 	width: 100%;
 	text-align: center;
-	font-size: 22px;
+	font-size: 12px;
 	font-weight: bold;
 	color: transparent;
 	transition: all 0.5s linear;
@@ -552,6 +548,9 @@ body {
 	}
 	#about .skills p {
 		font-size: 16px;
+	}
+	#image-text {
+		font-size: 22px;
 	}
 	#portfolio {
 		height: 200vh;
