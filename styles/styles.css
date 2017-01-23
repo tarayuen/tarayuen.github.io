@@ -313,6 +313,11 @@ body {
 #portfolio h2 {
 	padding: 20px;
 }
+.connect,
+.planit {
+	background: rgba(0, 0, 0, 0.5);
+	padding: 30px;
+}
 .connect p {
 	text-align: right;
 }
