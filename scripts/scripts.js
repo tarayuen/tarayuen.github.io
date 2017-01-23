@@ -1,8 +1,8 @@
 (function() {
 
-    // $(window).load(function() {
-    //     $(".loader").fadeOut("slow");
-    // });
+    $(window).load(function() {
+        $(".loader").fadeOut("slow");
+    });
 
     var screenWidth = $(window).width();
 
