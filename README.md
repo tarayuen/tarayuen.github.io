@@ -2,4 +2,4 @@
 
 *Photographer, Designer, & Future Engineer*
 
-This is my personal website! Check it out at https://www.tarayuen.tech
+This is my personal website! Check it out at https://www.tarayuen.me
