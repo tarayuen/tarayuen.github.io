@@ -1,3 +1,7 @@
+$(window).load(function() {
+    $(".loader").fadeOut("slow");
+});
+
 // $('body').scrollspy({ target: '.navbar' })
 
 // Smooth Scroll on clicking nav items
