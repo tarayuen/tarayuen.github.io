@@ -1,6 +1,6 @@
-$(window).load(function() {
-    $(".loader").fadeOut("slow");
-});
+// $(window).load(function() {
+//     $(".loader").fadeOut("slow");
+// });
 
 // $('body').scrollspy({ target: '.navbar' })
 
