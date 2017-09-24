@@ -1,348 +1,311 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="full-height">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="google-site-verification" content="U3yP_EUg-C38vwIl3Z__LNtboU0sUZiJuAqy92cC1O8" />
-  <meta name="description" content="Student at the University of Waterloo studying Systems Design Engineering. Check out my personal website to learn more! Resume, Projects, Contact... From Vancouver, BC">
-  <meta name="keywords" content="tara yuen, student, engineering, university, waterloo, vancouver">
-  <title>Tara Yuen | Personal Website | University of Waterloo</title>
-  <link rel="shortcut icon" href="img/ty.ico"/>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
-  <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/4.1.0/css/fabric.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/circle.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <meta name="google-site-verification" content="U3yP_EUg-C38vwIl3Z__LNtboU0sUZiJuAqy92cC1O8" />
+  	<meta name="description" content="Student at the University of Waterloo studying Systems Design Engineering. Check out my personal website to learn more! Resume, Projects, Contact... From Vancouver, BC">
+  	<meta name="keywords" content="tara yuen, student, engineering, university, waterloo, vancouver">
+  	
+  	<title>Tara Yuen | Personal Website | University of Waterloo</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="css/style.css" rel="stylesheet">
+
 </head>
 
-<body ng-app="myApp" ng-controller="myCtrl" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar">
 
-  <div class="loader"></div>
-
-  <!-- Navbar -->
-  <nav id="navbar-custom" class="navbar navbar-default navbar-fixed-top navbar-transparent">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#mountains">TARA</a>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a title="Resume" href="resume.pdf" target="_blank"><i class="fa fa-file-text fa-lg"></i></a></li>
-          <li><a title="LinkedIn" href="https://ca.linkedin.com/in/tarayuen" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a></li>
-          <li><a title="GitHub" href="https://github.com/tarayuen" target="_blank"><i id="github" class="fa fa-github fa-lg"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Main Content -->
-  <div class="parallax" data-spy="scroll" data-target=".navbar" data-offset="50">
-    
-    <!-- First Section -->
-    <div id="mountains" class="parallax-group">
-      <div class="parallax-layer parallax-layer-back"></div>
-      <div class="parallax-layer parallax-layer-1"></div>
-      <div class="parallax-layer parallax-layer-2"></div>
-      <div class="parallax-layer parallax-layer-3"></div>
-      <div class="parallax-layer parallax-layer-4"></div>
-      <div class="parallax-layer parallax-layer-5"></div>
-      <div class="parallax-layer parallax-layer-base">
-        <div class="container">
-          <img src="img/Profile.jpg">
-          <h1 id="animation" class="animated fadeInDownBig">Tara Yuen</h1>
-        </div>
-      </div>
-    </div>
-
-    <!-- About Section -->
-    <div id="about" class="parallax-group">
-      <div class="parallax-layer parallax-layer-base">
-        <div class="container">
-          <h1 class="animated fadeIn">About Me</h1>
-          <p class="subtitle">Hey! I'm Tara</p>
-            
-          <!-- Description -->
-          <div class="description">
-            <p>
-              As a University of Waterloo student studying Systems Design Engineering, I love building and designing methods to solve problems. From <span>software</span> applications to human-machine <span>systems</span>, I have a passion for figuring out how things work and enjoy applying my knowledge to real world applications. My experience includes product <span>design</span>, software development, machine shop work, <span>leadership</span>, and design team roles. In my spare time I enjoy sailing, skiing, hiking, and travelling!
-            </p>
-            <!-- Contact Info -->
-            <a class="btn btn-success" role="button" title="Cell" href="tel:+17782428804">
-              <span class="glyphicon glyphicon-earphone"></span>
-              &nbsp;778.242.8804
-            </a>
-            <a class="btn btn-success" role="button" title="Email" href="mailto:tara.yuen@uwaterloo.ca">
-              <span class="glyphicon glyphicon-envelope"></span>
-              &nbsp;tara.yuen@uwaterloo.ca
-            </a>
-          </div>
-
-          <!-- Skills -->
-          <div class="skills">
-            <div class="c100 p80">
-              <span><i class="devicon-java-plain"></i></span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-              <span><p>Java</p></span>
-            </div>
-            <div class="c100 p85">
-              <span><i class="devicon-csharp-plain"></i></span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-              <span><p>C#</p></span>
-            </div>
-            <div class="c100 p80">
-              <span><i class="devicon-cplusplus-plain"></i></span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-              <span><p>C++</p></span>
-            </div>
-            <div class="c100 p100">
-              <span><i class="devicon-css3-plain"></i></span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-              <span><p>CSS</p></span>
-            </div>
-            <div class="c100 p100">
-              <span><i class="devicon-html5-plain"></i></span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-              <span><p>HTML</p></span>
-            </div>
-            <div class="c100 p85">
-              <span><i class="devicon-python-plain"></i></span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-              <span><p>Python</p></span>
-            </div>
-            <div class="c100 p100">
-              <span><i class="devicon-javascript-plain"></i></span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-              <span><p>JavaScript</p></span>
-            </div>
-            <div class="c100 p100">
-              <span><i class="devicon-angularjs-plain"></i></span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-              <span><p>AngularJS</p></span>
-            </div>
-            <div class="c100 p75">
-              <span><i class="devicon-jquery-plain"></i></span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-              <span><p>jQuery</p></span>
-            </div>
-            <div class="c100 p85">
-              <span><i class="devicon-mysql-plain"></i></span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-              <span><p>MySQL</p></span>
-            </div>
-            <div class="c100 p60 design">
-              <span><i class="devicon-illustrator-plain"></i></span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-              <span><p>Illustrator</p></span>
-            </div>
-            <div class="c100 p60 design">
-              <span><i class="devicon-photoshop-plain"></i></span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-              <span><p>Photoshop</p></span>
-            </div>
-            <div class="c100 p100">
-              <span class="glyphicon glyphicon-wrench"></span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-              <span><p>WHMIS</p></span>
-            </div>
-            <div class="c100 p75">
-              <span><i class="fa fa-gear"></i></span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-              <span><p>Arduino</p></span>
-            </div>
-            <div class="c100 p85">
-              <span><i class="ms-Icon ms-Icon--ExcelLogo"></i></span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-              <span><p>Excel</p></span>
-            </div>
-            <div class="c100 p90 design">
-              <span>SW</span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-              <span><p>SolidWorks</p></span>
-            </div>
-          </div> <!-- End Skills -->
-            
-          <!-- Picture Gallery -->
-          <div class="flex-container">
-            <div><img src="img/EagleBluffs.jpg"><span id="image-text">Eagle Bluffs, BC</span></div>
-            <div><img src="img/Class.jpg"><span id="image-text">Systems Design Engineering Class of 2020</span></div>
-            <div><img src="img/GDC-4.jpg"><span id="image-text">Game Design Camp at Stratford Campus</span></div>
-            <div><img src="img/BlueMountain.jpg"><span id="image-text">Blue Mountain, ON</span></div>
-            <div><img src="img/BlackTusk.jpg"><span id="image-text">Black Tusk, BC</span></div>
-            <div><img src="img/SanFran.jpg"><span id="image-text">San Francisco, CA</span></div>
-            <div><img src="img/ClassSplash.jpg"><span id="image-text">Systems Design Engineering Classes of 2018 and 2020</span></div>
-            <div><img src="img/Ottawa.jpg"><span id="image-text">Ottawa, ON</span></div>
-            <div><img src="img/Ulti.jpg"><span id="image-text">Waterloo, ON</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio -->
-    <div id="portfolio" class="parallax-group">
-      <div class="parallax-layer parallax-layer-back"></div>
-      <div class="parallax-layer parallax-layer-base">
-        <div class="container">
-          <h1>Portfolio</h1>
-          <h2>Connect</h2>
-          <div class="connect flex-container">
-            <div class="flex-item">
-              <p>
-                Awarded 1st place at the UW Portal hackathon for creating our widget, Connect, that allows students to connect online in an accommodating atmosphere. We created this interactive widget to achieve the goal of increasing the portal's usage.
-              </p>
-            </div>
-            <a class="flex-item" href="https://uwaterloo.ca/student-success/blog/post/syde-chicks-rule-roost-portal-hackathon" target="_blank"><img class="shadow" src="img/Portal.png"></a>
-          </div>
-          <h2>Plan-It</h2>
-          <div class="planit flex-container">
-            <a class="flex-item" href="https://www.dropbox.com/sh/8tk9fs2ju6a6r15/AAC7uC6zVr5bCqWRsWGIvWm5a?dl=0" target="_blank"><img class="shadow" src="img/GDC.jpg"></a>
-            <div class="flex-item">
-              <p>
-                At the UW Game Design Camp hackathon we were awarded 3rd place for creating a one button game, Plan-It. The event was hosted by the University of Waterloo Stratford campus in partnership with the Stratford Accelerator Centre, Games Institute and Canadian Digital Media Network that allowed our game to be displayed on the three-storey Christie® MicroTiles® wall.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Contact Section -->
-    <div id="contact" class="parallax-group">
-      <div class="parallax-layer parallax-layer-base">
-        <div class="container">
-          <h1>Contact</h1>
-          <p>If you'd like to get in touch with me, shoot me a message! I'll get back to you as soon as possible.</p>
-          <div class="well">
-            <!-- Contact Form -->
-            <form class="form-horizontal" role="form" method="post" action="https://formspree.io/tara.yuen@uwaterloo.ca">
-              <div class="form-group">
-                <label class="control-label col-sm-2" for="name">Name:</label>
-                <div class="col-sm-10">
-                  <input name="name" id="name" type="text" class="form-control" placeholder="Your name">
+    <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">Tara Yuen</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav nav-pills navbar-nav mr-auto">
+                        <li class="nav-item"> <!-- add class 'active' -->
+                            <a class="nav-link" href="#about">About <!-- <span class="sr-only">(current)</span> --></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-sm-2" for="email">Email:</label>
-                <div class="col-sm-10">
-                  <input name="_replyto" id="email" type="email" class="form-control" placeholder="Your email">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-sm-2" for="comment">Message:</label>
-                <div class="col-sm-10">
-                  <textarea name="comment" id="comment" type="text" class="form-control" rows="5"></textarea>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-sm-2" for="human">2 + 8 = ?</label>
-                <div class="col-sm-10">
-                  <input name="human" id="human" type="text" class="form-control" placeholder="Your answer">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                  <button type="submit" value="Send" class="btn btn-default">Submit <span class="glyphicon glyphicon-send"></span></button>
-                </div>
-              </div>
-              <input type="text" name="_gotcha" style="display:none" />
-              <input type="hidden" name="_subject" value="Website Contact Submission" />
-              <input type="hidden" name="_next" value="http://tarayuen.tech/thanks.html" />
-            </form> <!-- End Contact Form -->
-          </div>
-        </div>
-      </div>
-    </div>
+            </div>
+        </nav>
 
-    <!-- Footer Section -->
-    <div id="footer" class="parallax-group">
-      <div class="parallax-layer parallax-layer-base flex-footer">
-        <div class="container">
-          <h2>Tara Yuen</h2>
-          <a class="btn btn-success btn-circle" role="button" title="Cell"  href="tel:+17782428804" ng-mouseover="showInfo('+17782428804')"><span class="glyphicon glyphicon-earphone"></span></a>
-          <a class="btn btn-success btn-circle" role="button" title="Email" href="mailto:tara.yuen@uwaterloo.ca" ng-mouseover="showInfo('tara.yuen@uwaterloo.ca')"><span class="glyphicon glyphicon-envelope"></span></a>
-          <a class="btn btn-success btn-circle" role="button" target="_blank" title="LinkedIn" href="https://ca.linkedin.com/in/tarayuen"><i class="fa fa-linkedin"></i></a>
-          <a class="btn btn-success btn-circle" role="button" target="_blank" title="GitHub" href="https://github.com/tarayuen"><i class="fa fa-github"></i></a>
-          <a class="btn btn-success btn-circle" role="button" target="_blank" title="Resume" href="resume.pdf"><i class="fa fa-file-text"></i></a>
-          <p id="contact-info">{{contactInfo}}</p> <!-- show contact info on hover -->
+    <!--/.Navbar-->
+    <!--Mask-->
+    <div class="parallax view hm-black-light">
+        <div class="full-bg-img flex-center">
+            <ul class="animated fadeInUp">
+                <li class="typing">
+                    <h1>Hi</h1>
+                    <h1 id="typing" class="h1-responsive font-bold"></h1></li>
+                <li>
+                	<p>Photographer, Product Designer, and Systems Design Engineer (in the making)</p>
+                    <!-- <p>Waterloo, ON<i class="fa fa-location-arrow ml-2" aria-hidden="true"></i></p> -->
+                </li>
+                <li>
+                    <a target="_blank" href="tel:+17782428804" title="Cell" class="btn btn-cyan btn-lg" rel="nofollow"><i class="fa fa-phone mr-2"></i>Call</a>
+                    <a target="_blank" href="mailto:tara.yuen@uwaterloo.ca" class="btn btn-default btn-lg" rel="nofollow"><i class="fa fa-envelope mr-2"></i>Email</a>
+                    <!-- <a target="_blank" href="" class="btn btn-danger btn-lg" rel="nofollow">Like</a>
+                    <a target="_blank" href="" class="btn btn-outline-white btn-lg" rel="nofollow">Follow</a> -->
+                </li>
+            </ul>
         </div>
-      </div>
     </div>
-    <div id="bottom" class="parallax-group">
-      <div class="parallax-layer parallax-layer-base">
-        <div class="container">
-          <p>&copy; 2016 Tara Yuen</p>
+    <!--/.Mask-->
+
+    <!-- Main Content -->
+    <main>
+
+    	<div id="about" class="container padded-section">
+    		<h1>About Me</h1>
+    		<div class="row">
+    			<div class="col-md-4">
+	    			<img id="blacktusk" src="img/blacktusk.jpg">
+	    		</div>
+	    		<div class="col-md-8">
+	    			Hey there! I'm currently studying Systems Design Engineering at the University of Waterloo. Throughout the past couple of years, I've designed and worked on a wide range of products and applications from FinTech software to automotive parts. I enjoy figuring out how things work and applying my design knowledge to solve user problems. When I'm not studying or working, I love spending time outdoors playing sports or taking photos!
+	    		</div>
+    		</div>
+    	</div>
+
+    	<div id="resume" class="padded-section">
+    		<div class="row justify-content-center">
+	    		<a target="_blank" href="resume_tarayuen.pdf" class="btn btn-outline-white btn-lg" rel="nofollow"><i class="fa fa-file-text mr-2"></i>Resume</a>
+    		</div>
+    	</div>
+
+    	<div id="portfolio" class="container padded-section">
+    		<h1>Portfolio</h1>
+    		<div class="row">
+				
+				<div class="col-md-4">
+					<div class="card">
+					    <div class="view overlay hm-black-strong">
+					        <img src="img/hangouts.jpg" class="img-fluid" alt="">
+					        <a href="hangouts.html">
+					            <div class="mask flex-center">
+							        <p class="white-text">VIEW MORE</p>
+							    </div>
+					        </a>
+					    </div>
+
+					    <div class="card-body">
+					        <h4 class="card-title">Hangouts</h4>
+					        <p>The design of an interactive game that draws attention to the effects of social media on human interaction</p>
+					    </div>
+					</div>
+				</div>
+				
+				<div class="col-md-4">
+					<div class="card">
+					    <div class="view overlay hm-black-strong">
+					        <img src="img/grt.jpg" class="img-fluid" alt="">
+					        <a href="grt.html">
+					            <div class="mask flex-center">
+							        <p class="white-text">VIEW MORE</p>
+							    </div>
+					        </a>
+					    </div>
+
+					    <div class="card-body">
+					        <h4 class="card-title">GRT easyGO Redesign</h4>
+					        <p>Enhanced UI/UX by conducting heuristic evaluations, design walkthroughs, and usability testing</p>
+					    </div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="card">
+					    <div class="view overlay hm-white-slight">
+					        <img src="img/foodfort.jpg" class="img-fluid" alt="">
+					        <!-- <a href="">
+					            <div class="mask"></div>
+					        </a> -->
+					    </div>
+
+					    <div class="card-body">
+					        <h4 class="card-title">Foodfort</h4>
+					        <p>Initiated the design of an application that informs users of nearby food discounts and promotions</p>
+					    </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				
+				<div class="col-md-4">
+					<div class="card">
+					    <div class="view overlay hm-black-strong">
+					        <img src="img/connect.jpg" class="img-fluid" alt="">
+					        <a href="https://uwaterloo.ca/student-success/blog/post/syde-chicks-rule-roost-portal-hackathon">
+					            <div class="mask flex-center">
+							        <p class="white-text">VIEW MORE</p>
+							    </div>
+					        </a>
+					    </div>
+
+					    <div class="card-body">
+					        <h4 class="card-title">Connect</h4>
+					        <p>Awarded 1st place at the UW Portal hackathon for creating our widget, Connect, that allows students to connect online in an accommodating atmosphere. We created this interactive widget to achieve the goal of increasing the portal's usage.</p>
+					    </div>
+					</div>
+				</div>
+				
+				<div class="col-md-4">
+					<div class="card">
+					    <div class="view overlay hm-black-strong">
+					        <img src="img/planit.png" class="img-fluid" alt="">
+					        <a href="https://www.dropbox.com/sh/8tk9fs2ju6a6r15/AAC7uC6zVr5bCqWRsWGIvWm5a?dl=0">
+					            <div class="mask flex-center">
+							        <p class="white-text">VIEW MORE</p>
+							    </div>
+					        </a>
+					    </div>
+
+					    <div class="card-body">
+					        <h4 class="card-title">Plan-It</h4>
+					        <p>At the UW Game Design Camp hackathon we were awarded 3rd place for creating a one button game, Plan-It. The event was hosted by the University of Waterloo Stratford campus in partnership with the Stratford Accelerator Centre, Games Institute and Canadian Digital Media Network that allowed our game to be displayed on the three-storey Christie® MicroTiles® wall.</p>
+					    </div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="card">
+					    <div class="view overlay hm-black-strong">
+					        <img src="img/mude.jpg" class="img-fluid" alt="">
+					        <a href="https://github.com/leoybkim/Mude">
+					            <div class="mask flex-center">
+							        <p class="white-text">VIEW MORE</p>
+							    </div>
+					        </a>
+					    </div>
+
+					    <div class="card-body">
+					        <h4 class="card-title">Mude</h4>
+					        <p>Designed a smart sound system that allows users to listen to music with ease</p>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="contact" class="padded-section">
+			<div class="container">
+			    <div class="row justify-content-center">
+			        <div class="col-md-8 col-sm-12">
+			            <div class="card wow fadeInRight" data-wow-delay="0.3s">
+			                <div class="card-body z-depth-2">
+			                    <form role="form" method="post" action="https://formspree.io/tara.yuen@uwaterloo.ca">
+			                        <h1>Contact</h1>
+
+			                        <p>If you'd like to get in touch with me, shoot me a message!</p>
+
+			                        <div class="md-form">
+			                            <i class="fa fa-user prefix grey-text"></i>
+			                            <input name="name" type="text" id="form3" class="form-control">
+			                            <label for="form3">Your name</label>
+			                        </div>
+
+			                        <div class="md-form">
+			                            <i class="fa fa-envelope prefix grey-text"></i>
+			                            <input name="_replyto" type="text" id="form2" class="form-control">
+			                            <label for="form2">Your email</label>
+			                        </div>
+
+			                        <div class="md-form">
+			                            <i class="fa fa-pencil prefix grey-text"></i>
+			                            <textarea name="comment" type="text" id="form8" class="md-textarea" style="height: 100px"></textarea>
+			                            <label for="form8">Your message</label>
+			                        </div>
+
+			                        <div class="text-center">
+			                            <button type="submit" value="Send" class="btn btn-danger">Send <i class="fa fa-paper-plane-o ml-1"></i></button>
+			                        </div>
+
+			                        <input type="hidden" name="_subject" value="Website Contact Submission" />
+              						<input type="hidden" name="_next" value="http://tarayuen.me/thanks.html" />
+			                    </form>
+			                    <!-- <hr> -->
+			                    <div id="contact-icons" class="d-flex justify-content-center flex-wrap">
+			                    	<a target="_blank" href="tel:+17782428804" title="Cell"  rel="nofollow"><i class="fa fa-phone"></i></a>
+                    				<a target="_blank" href="mailto:tara.yuen@uwaterloo.ca" rel="nofollow"><i class="fa fa-envelope"></i></a>
+                    				<a target="_blank" href="https://www.linkedin.com/in/tarayuen" rel="nofollow"><i class="fa fa-linkedin"></i></a>
+                    				<a target="_blank" href="https://github.com/tarayuen" rel="nofollow"><i class="fa fa-github"></i></a>
+                    				<a target="_blank" href="resume_tarayuen.pdf" rel="nofollow"><i class="fa fa-file-text"></i></a>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+		</div>
+
+    </main>
+    <!-- /.Main Content -->
+
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only">
+
+        <!--Call to action-->
+        <div class="call-to-action">
+            <!-- <h4 class="mb-5"></h4> -->
+            <img src="img/profile.jpg">
+            <h5>Tara Yuen</h5>
         </div>
-      </div>
-    </div>
+        <!--/.Call to action-->
 
-  </div>
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                Built with love and Material Design
+            </div>
+        </div>
+        <!--/.Copyright-->
 
-  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="scripts/scripts.js"></script>
+    </footer>
+    <!--/.Footer-->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+    <!-- Bootstrap dropdown -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="js/typewriter.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 
 </body>
+
 </html>

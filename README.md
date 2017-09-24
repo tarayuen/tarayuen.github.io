@@ -1,5 +1,5 @@
 # Tara Yuen
 
-*Designer, Developer, & Future Engineer*
+*Photographer, Designer, & Future Engineer*
 
-This is my personal website. You can pay me a visit at https://www.tarayuen.tech
+This is my personal website! Check it out at https://www.tarayuen.tech

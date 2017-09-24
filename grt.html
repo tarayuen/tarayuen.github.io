@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" class="full-height">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Tara Yuen</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Tara Yuen</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav nav-pills navbar-nav mr-auto">
+                        <li class="nav-item"> <!-- add class 'active' -->
+                            <a class="nav-link" href="index.html#about">About <!-- <span class="sr-only">(current)</span> --></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <!--/.Navbar-->
+
+	<!--Carousel Wrapper-->
+    <div id="carousel-example-3" class="carousel slide carousel-fade white-text" data-ride="carousel" data-interval="false">
+
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+
+            <div class="carousel-item active view hm-black-light" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/grt-main.jpg'); background-repeat: no-repeat; background-size: cover;">
+                <!-- Caption -->
+                <div class="full-bg-img flex-center white-text">
+                    <ul class="animated fadeIn col-md-12">
+                        <li>
+                            <h1 class="h1-responsive" style="font-size: 50px; font-weight: bold;">GRT easyGO Redesign</h1>
+                        </li>
+                        <li>
+                            <p>Making the UI/UX more user friendly for daily commuters</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.Caption -->
+
+            </div>
+
+        </div>
+        <!--/.Slides-->
+
+    </div>
+    <!--/.Carousel Wrapper-->
+
+    <!-- Main Content -->
+    <main id="grt">
+    	<div class="container project">
+    		<h2>Context</h2>
+    		<p>
+    			The Grand River Transit (GRT) easyGO app is used by public transit commuters who need to plan their travel routes and times quickly, without difficulty. A team of us redesigned it to improve its UI/UX for all types of users.
+    		</p>
+    		<h2>Problem</h2>
+    		<p>
+    			Tens of thousands of users have downloaded the GRT easyGO app from the app store. Unfortunately, it has a 2.5 out of 5 star rating. Users found it hard to navigate what should be a simple and intuitive app to use. A redesign was needed for GRT commuters who use the app to plan their travels and want to arrive on time to their appropriate destination.
+    		</p>
+    		<!-- <img src="img/grt-soc.jpg">
+    		<figcaption>A chart was created to determine the situation of concern</figcaption> -->
+    		<h2>User Personas</h2>
+    		<p>
+    			Primary users were created to represent the different individuals who use the app. Scenarios were painted for each one.
+    		</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Sany-Hyeok - Scenario</h4>
+                            <p class="card-text">
+                                Sany-Hyeok moved to Canada very recently to study at the University of Waterloo. He is not good at English, and has a hard time communicating with fellow students and peers in his program. For lunch, he is unable to cook and despises all the food choices available at the university and its nearby plaza. He needs the app to load and give him the schedules quickly so he can get to his favourite restaurants outside of the general area, and get back to class in time.  His English skills forces him to rely on visual cues rather than long instructions. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Scott Duffman - Scenario</h4>
+                            <p class="card-text">
+                                Scott is a social worker who must visit his clients all around Kitchener-Waterloo area. He does not own a car, and thus heavily relies on public transit. He must also be punctual to all his visits due to his personality as well as the nature of his job.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>Design Walkthrough</h2>
+            <p>
+                <strong>Task:</strong> You got a ride to school this morning, classes are over, and you need to pick a bus to get to Fairview Park Mall. You are at E5. Avoid exiting the app. Once you find a route, favourite it. Determine how long it will take to get there.
+            </p>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Concerns</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Discoverability</th>
+                        <td>
+                            <li>Users were not aware of the Planner</li>
+                            <li>Multiple menus for repeated choices</li>
+                            <li>Settings were difficult to find</li>
+                            <li>Users did not know clicking on a stop would lead to showing times</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Feedback</th>
+                        <td>
+                            <li>Back button has very little feedback***</li>
+                            <li>Loading sign is missing</li>
+                            <li>Text cannot be enlarged*</li>
+                            <li>No audio feedback**</li>
+                            <li>Favouriting a stop does not prompt a message</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Conceptual Model</th>
+                        <td>
+                            <li>Buttons are not intuitively buttons</li>
+                            <li>Layout is very uncommon and does not follow standard guidelines</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Affordances</th>
+                        <td>
+                            <li>Detour trips are not native to app</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Signifiers</th>
+                        <td>
+                            <li>Bad choice of icons*</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mapping</th>
+                        <td>
+                            <li>No vertical scroll bar</li>
+                            <li>My Location button on maps is not intuitive</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Constraints</th>
+                        <td>
+                            <li>Cannot enter Bus number or Route into search</li>
+                            <li>Not all stops can be viewed on map</li>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <figcaption>
+                * If user has a visual impairment<br>
+                ** If user has a hearing impairment<br>
+                *** If user has low motor skills<br>
+            </figcaption>
+            <h2>Redesign</h2>
+            <p>After determining user requirements, conducting heuristic evaluations, and completing a hierarchical task analysis, mockups of the improved design were created.</p>
+            <div class="row enlarge">
+                <div class="col-md-4">
+                    <img src="img/grt-redesign1.jpg">
+                    <figcaption>The home screen was redesigned to be more personalized for each user by incorporating their current location and recent history</figcaption>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/grt-main.jpg">
+                    <figcaption>Viewing stop details became more readable by making the selected location stand out</figcaption>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/grt-redesign2.jpg">
+                    <figcaption>Arrows were incorporated into stop locations that were difficult to determine which side of the street they were on</figcaption>
+                </div>
+            </div>
+            <h2>Big Picture</h2>
+            <p>
+                This GRT easyGO app redesign improved the performance and accessibility for all types of users. Throughout the entire process, the UI/UX enhancement was done considering human factor design issues.
+            </p>
+    	</div>
+    </main>
+    <!-- /.Main Content -->
+
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only">
+
+        <!--Call to action-->
+        <div class="call-to-action">
+            <!-- <h4 class="mb-5"></h4> -->
+            <img src="img/profile.jpg">
+            <a href="index.html"><h5>Tara Yuen</h5></a>
+        </div>
+        <!--/.Call to action-->
+
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                Built with love and Material Design
+            </div>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+    <!-- Bootstrap dropdown -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+</body>
+
+</html>

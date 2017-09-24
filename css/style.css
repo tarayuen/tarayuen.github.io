@@ -1,0 +1,222 @@
+/* YOUR CUSTOM STYLES */
+
+/* TEMPLATE STYLES */
+
+html,
+body,
+.view {
+    height: 100%;
+}
+/* Navigation*/
+
+body {
+	position: relative;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.scrolling-navbar {
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+
+.top-nav-collapse {
+    background-color: #00bcd4; /*cyan*/
+}
+
+footer.page-footer {
+    background-color: #00bcd4;
+    margin-top: -1px;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #00bcd4;
+    }
+}
+.navbar .btn-group .dropdown-menu a:hover {
+    color: #000 !important;
+}
+.navbar .btn-group .dropdown-menu a:active {
+    color: #fff !important;
+}
+
+.nav-pills .nav-link.active, .show>.nav-pills .nav-link {
+	background-color: #4dd0e1;
+}
+
+/*Call to action*/
+
+.flex-center {
+    color: #fff;
+    padding-top: 200px;
+}
+
+.view.parallax {
+    background: url("../img/tree.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.typing h1 {
+	display: inline;
+	font-size: 40px;
+	font-weight: 300;
+}
+
+main {
+	color: #212121;
+}
+
+main h1 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.padded-section {
+	padding: 60px;
+}
+
+.typing h1 {
+	font-size: 3em;
+	/*font-weight: bold;*/
+}
+
+/*About*/
+
+#blacktusk {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+/*Resume*/
+
+#resume {
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../img/sailing.jpg");
+    height: 200px; 
+}
+
+/*Portfolio*/
+
+#portfolio .card {
+	margin-bottom: 30px;
+}
+
+/*Contact*/
+
+#contact {
+	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../img/lions.jpg");
+	height: 900px;
+}
+
+#contact .card-body {
+	padding: 30px;
+}
+
+#contact p {
+	text-align: center;
+	margin-top: -10px;
+	margin-bottom: 20px;
+}
+
+.md-form .prefix {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+#contact-icons a {
+	font-size: 30px;
+	margin: 15px;
+	color: #00bcd4;
+}
+
+#contact-icons a:hover {
+	color: grey;
+}
+
+/*Footer*/
+
+footer img {
+	width: 20%;
+	border-radius: 50%;
+	margin-bottom: 15px;
+}
+
+/*Parallax*/
+
+#resume,
+#contact {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*Small Screens*/
+
+@media screen and (max-width: 768px) {
+	.padded-section {
+		padding: 40px 5px 10px 5px;
+	}
+
+	#resume .row {
+		margin-top: 20px;
+	}
+
+	#contact-icons {
+		font-size: 20px;
+	}
+}
+
+/* Carousel*/
+
+    .carousel {
+        height: 50%;
+    }
+
+    @media (max-width: 776px) {
+        .carousel {
+            height: 100%;
+        }
+    }
+
+    .carousel-item,
+    .active {
+        height: 100%;
+    }
+
+    .carousel-inner {
+        height: 100%;
+    }
+
+/*Project*/
+
+.project {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.project img {
+	width: 100%;
+}
+
+figcaption {
+	font-size: 14px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+/*GRT*/
+
+#grt .card {
+	margin-bottom: 30px;
+}
