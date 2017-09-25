@@ -4,6 +4,18 @@
 
 // $('body').scrollspy({ target: '.navbar' })
 
+// Navbar on scroll
+$(document).scroll(function () {
+  
+    var $top = $(window).scrollTop();
+    if ($top > 50) {
+        $(".scrolling-navbar").addClass("top-nav-collapse");
+    } else {
+        $(".scrolling-navbar").removeClass("top-nav-collapse");
+    }
+
+});
+
 // Smooth Scroll on clicking nav items
 $('nav a').click(function () {
     var $href = $(this).attr('href');
@@ -40,11 +52,11 @@ typewriter.pauseFor(1000)
 // Parallaxing on scroll
 $(document).scroll(function () {
   
-  var $top = $(window).scrollTop();
-  var $resume = $('#resume');
-  var $contact = $('#contact');
-  $('.parallax').css('background-positionY', ($top * -0.3) + 'px');
-  $resume.css('background-positionY', ($top - $resume.offset().top) * -0.3 + 'px');
-  $contact.css('background-positionY', ($top - $contact.offset().top) * -0.2 + 'px');
+    var $top = $(window).scrollTop();
+    var $resume = $('#resume');
+    var $contact = $('#contact');
+    $('.parallax').css('background-positionY', ($top * -0.3) + 'px');
+    $resume.css('background-positionY', ($top - $resume.offset().top) * -0.3 + 'px');
+    $contact.css('background-positionY', ($top - $contact.offset().top) * -0.2 + 'px');
 
 });
