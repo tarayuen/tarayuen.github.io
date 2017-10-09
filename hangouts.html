@@ -192,6 +192,21 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
 
+    <!-- SCRIPTS -->
+    <script type="text/javascript">
+        // Navbar on scroll
+        $(document).scroll(function () {
+          
+            var $top = $(window).scrollTop();
+            if ($top > 50) {
+                $(".scrolling-navbar").addClass("top-nav-collapse");
+            } else {
+                $(".scrolling-navbar").removeClass("top-nav-collapse");
+            }
+
+        });
+    </script>
+
 </body>
 
 </html>

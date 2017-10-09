@@ -1,7 +1,3 @@
-/* YOUR CUSTOM STYLES */
-
-/* TEMPLATE STYLES */
-
 html,
 body,
 .view {
@@ -163,7 +159,7 @@ main h1 {
 /*Footer*/
 
 footer img {
-	width: 20%;
+	width: 10%;
 	border-radius: 50%;
 	margin-bottom: 15px;
 }
@@ -196,28 +192,32 @@ footer img {
 	#contact-icons {
 		font-size: 20px;
 	}
+
+    footer img {
+        width: 20%;
+    }
 }
 
 /* Carousel*/
 
+.carousel {
+    height: 50%;
+}
+
+@media (max-width: 776px) {
     .carousel {
-        height: 50%;
-    }
-
-    @media (max-width: 776px) {
-        .carousel {
-            height: 100%;
-        }
-    }
-
-    .carousel-item,
-    .active {
         height: 100%;
     }
+}
 
-    .carousel-inner {
-        height: 100%;
-    }
+.carousel-item,
+.car-active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
 
 /*Project*/
 
