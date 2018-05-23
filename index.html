@@ -18,9 +18,10 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css" rel="stylesheet">
@@ -52,6 +53,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="//www.tarayuen.me/photography.html">Photography</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -66,14 +70,7 @@
                     <h1>Hi</h1>
                     <h1 id="typing" class="h1-responsive font-bold"></h1></li>
                 <li>
-                	<p>Photographer, Product Designer, and Systems Design Engineer (in the making)</p>
-                    <!-- <p>Waterloo, ON<i class="fa fa-location-arrow ml-2" aria-hidden="true"></i></p> -->
-                </li>
-                <li>
-                    <a target="_blank" href="tel:+17782428804" title="Cell" class="btn btn-cyan btn-lg" rel="nofollow"><i class="fa fa-phone mr-2"></i>Call</a>
-                    <a target="_blank" href="mailto:tara.yuen@uwaterloo.ca" class="btn btn-default btn-lg" rel="nofollow"><i class="fa fa-envelope mr-2"></i>Email</a>
-                    <!-- <a target="_blank" href="" class="btn btn-danger btn-lg" rel="nofollow">Like</a>
-                    <a target="_blank" href="" class="btn btn-outline-white btn-lg" rel="nofollow">Follow</a> -->
+                	<p>Product Manager, Photographer, and Systems Design Engineer</p>
                 </li>
             </ul>
         </div>
@@ -83,147 +80,117 @@
     <!-- Main Content -->
     <main>
 
-    	<div id="about" class="container padded-section">
-    		<h1>About Me</h1>
+    	<!-- ABOUT -->
+    	<div id="about" class="container padded-section padded-section-extra">
     		<div class="row">
-    			<div class="col-md-4">
+    			<div class="col-sm-4">
 	    			<img id="blacktusk" src="img/blacktusk.jpg">
 	    		</div>
-	    		<div class="col-md-8">
-	    			Hey there! I'm currently studying Systems Design Engineering at the University of Waterloo. Throughout the past couple of years, I've designed and worked on a wide range of products and applications from FinTech software to automotive parts. I enjoy figuring out how things work and applying my design knowledge to solve user problems. When I'm not studying or working, I love spending time outdoors playing sports or taking photos!
+	    		<div class="col-sm-8">
+	    			<h1>Tara Yuen</h1>
+	    			<p>Hey there! I'm currently studying Systems Design Engineering at the University of Waterloo. Throughout the past couple of years, I've designed and worked on a wide range of products and applications from cell and gene therapy software to automotive parts. I enjoy figuring out how things work and applying my design knowledge to solve user problems. When I'm not studying or working, I love spending time outdoors playing sports or taking <a id="photo-link" href="//www.tarayuen.me/photography.html" target="_blank">photos</a>!</p>
+	    			<br>
+	    			<div id="contact-icons" class="d-flex flex-wrap">
+                    	<a target="_blank" href="tel:+17782428804" title="Cell: 778-242-8804"  rel="nofollow"><i class="fas fa-phone fa-lg"></i></a>
+        				<a target="_blank" href="mailto:tara.yuen@uwaterloo.ca" title="Email: tara.yuen@uwaterloo.ca" rel="nofollow"><i class="fas fa-envelope fa-lg"></i></a>
+        				<a target="_blank" href="https://www.linkedin.com/in/tarayuen" rel="nofollow"><i class="fab fa-linkedin fa-lg"></i></a>
+        				<a target="_blank" href="https://github.com/tarayuen" rel="nofollow"><i class="fab fa-github fa-lg"></i></a>
+        				<a target="_blank" href="resume_tarayuen.pdf" rel="nofollow"><i class="fas fa-file-alt fa-lg"></i></a>
+        				<a target="_blank" href="//www.tarayuen.me/photography.html" rel="nofollow"><i class="fas fa-camera fa-lg"></i></a>
+                    </div>
 	    		</div>
     		</div>
     	</div>
 
     	<div id="resume" class="padded-section">
     		<div class="row justify-content-center">
-	    		<a target="_blank" href="resume_tarayuen.pdf" class="btn btn-outline-white btn-lg" rel="nofollow"><i class="fa fa-file-text mr-2"></i>Resume</a>
+	    		<a target="_blank" href="resume_tarayuen.pdf" class="btn btn-outline-white btn-lg" rel="nofollow"><i class="fas fa-file-alt mr-2"></i>Resume</a>
     		</div>
     	</div>
 
-    	<div id="portfolio" class="container padded-section">
-    		<h1>Portfolio</h1>
+    	<!-- PORTFOLIO -->
+    	<div id="portfolio" class="padded-section">
+    		
+    		<!-- Vineti -->
     		<div class="row">
-				
-				<div class="col-md-4">
-					<div class="card">
-					    <div class="view overlay hm-black-strong">
-					        <img src="img/hangouts.jpg" class="img-fluid" alt="">
-					        <a href="hangouts.html">
-					            <div class="mask flex-center">
-							        <p class="white-text">VIEW MORE</p>
-							    </div>
-					        </a>
-					    </div>
-
-					    <div class="card-body">
-					        <h4 class="card-title">Hangouts</h4>
-					        <p>The design of an interactive game that draws attention to the effects of social media on human interaction</p>
-					    </div>
-					</div>
+				<div class="col-sm-7 order-md-2">
+					<img src="img/macbook.png">
 				</div>
-				
-				<div class="col-md-4">
-					<div class="card">
-					    <div class="view overlay hm-black-strong">
-					        <img src="img/grt.jpg" class="img-fluid" alt="">
-					        <a href="grt.html">
-					            <div class="mask flex-center">
-							        <p class="white-text">VIEW MORE</p>
-							    </div>
-					        </a>
-					    </div>
-
-					    <div class="card-body">
-					        <h4 class="card-title">GRT easyGO Redesign</h4>
-					        <p>Enhanced UI/UX by conducting heuristic evaluations, design walkthroughs, and usability testing</p>
-					    </div>
-					</div>
-				</div>
-
-				<div class="col-md-4">
-					<div class="card">
-					    <div class="view overlay hm-white-slight">
-					        <img src="img/foodfort.jpg" class="img-fluid" alt="">
-					        <!-- <a href="">
-					            <div class="mask"></div>
-					        </a> -->
-					    </div>
-
-					    <div class="card-body">
-					        <h4 class="card-title">Foodfort</h4>
-					        <p>Initiated the design of an application that informs users of nearby food discounts and promotions</p>
-					    </div>
-					</div>
-				</div>
+    			<div class="col-sm-5 description-left order-sm-1">
+    				<h2>Vineti</h2>
+    				<p>Shipped software products that help deliver cures for cancer. Vineti digitizes and orchestrates the end-to-end process needed for high-value therapies to reach everyone who needs them.</p>
+    				<a href="https://vineti.com" class="btn btn-cyan" target="_blank">View More</a>
+    			</div>
 			</div>
 
-			<div class="row">
-				
-				<div class="col-md-4">
-					<div class="card">
-					    <div class="view overlay hm-black-strong">
-					        <img src="img/connect.jpg" class="img-fluid" alt="">
-					        <a href="https://uwaterloo.ca/student-success/blog/post/syde-chicks-rule-roost-portal-hackathon">
-					            <div class="mask flex-center">
-							        <p class="white-text">VIEW MORE</p>
-							    </div>
-					        </a>
-					    </div>
+			<!-- Hangouts -->
+    		<div class="row">
+    			<div class="col-sm-6">
+    				<img src="img/hangouts.png">
+    			</div>
+                <div class="col-sm-6 description-right">
+                    <h2>Hangouts</h2>
+                    <p>Designed and user tested an interactive game that draws attention to the effects of social media on human interaction.</p>
+                    <a href="hangouts.html" class="btn btn-cyan" target="_blank">View More</a>
+                </div>
+            </div>
 
-					    <div class="card-body">
-					        <h4 class="card-title">Connect</h4>
-					        <p>Awarded 1st place at the UW Portal hackathon for creating our widget, Connect, that allows students to connect online in an accommodating atmosphere. We created this interactive widget to achieve the goal of increasing the portal's usage.</p>
-					    </div>
-					</div>
-				</div>
-				
-				<div class="col-md-4">
-					<div class="card">
-					    <div class="view overlay hm-black-strong">
-					        <img src="img/planit.png" class="img-fluid" alt="">
-					        <a href="https://www.dropbox.com/sh/8tk9fs2ju6a6r15/AAC7uC6zVr5bCqWRsWGIvWm5a?dl=0">
-					            <div class="mask flex-center">
-							        <p class="white-text">VIEW MORE</p>
-							    </div>
-					        </a>
-					    </div>
+    		<!-- GRT easyGO Redesign -->
+    		<div class="row">
+    			<div class="col-sm-6 order-sm-2">
+    				<img src="img/grt.png">
+    			</div>
+                <div class="col-sm-6  order-sm-1 description-left">
+                    <h2>GRT easyGO Redesign</h2>
+                    <p>Enhanced UI/UX of a transportation app by conducting heuristic evaluations, design walkthroughs, and usability testing.</p>
+                    <a href="grt.html" class="btn btn-cyan" target="_blank">View More</a>
+                </div>
+    		</div>
 
-					    <div class="card-body">
-					        <h4 class="card-title">Plan-It</h4>
-					        <p>At the UW Game Design Camp hackathon we were awarded 3rd place for creating a one button game, Plan-It. The event was hosted by the University of Waterloo Stratford campus in partnership with the Stratford Accelerator Centre, Games Institute and Canadian Digital Media Network that allowed our game to be displayed on the three-storey Christie® MicroTiles® wall.</p>
-					    </div>
-					</div>
-				</div>
+    		<!-- Connect -->
+    		<div class="row">
+    			<div class="col-sm-6">
+    				<img src="img/connect.png">
+    			</div>
+                <div class="col-sm-6 description-right">
+                    <h2>Connect</h2>
+                    <p>Awarded 1st place at the UW Portal hackathon for creating our widget, Connect, that allows students to connect online in an accommodating atmosphere. We created this interactive widget to achieve the goal of increasing the portal's usage.</p>
+                    <a href="https://uwaterloo.ca/student-success/blog/post/syde-chicks-rule-roost-portal-hackathon" class="btn btn-cyan" target="_blank">View More</a>
+                </div>
+    		</div>
 
-				<div class="col-md-4">
-					<div class="card">
-					    <div class="view overlay hm-black-strong">
-					        <img src="img/mude.jpg" class="img-fluid" alt="">
-					        <a href="https://github.com/leoybkim/Mude">
-					            <div class="mask flex-center">
-							        <p class="white-text">VIEW MORE</p>
-							    </div>
-					        </a>
-					    </div>
+    		<!-- Plan-It -->
+    		<div class="row">
+    			<div class="col-sm-6 order-sm-2">
+    				<img src="img/planit.png">
+    			</div>
+                <div class="col-sm-6 order-sm-1 description-left">
+                    <h2>Plan-It</h2>
+                    <p>Awarded 3rd place for creating a one button game, Plan-It. Our partnership with the Stratford Accelerator Centre, Games Institute and Canadian Digital Media Network allowed our game to be displayed on the three-storey Christie® MicroTiles® wall.</p>
+                    <a href="https://www.dropbox.com/sh/8tk9fs2ju6a6r15/AAC7uC6zVr5bCqWRsWGIvWm5a?dl=0" class="btn btn-cyan" target="_blank">View More</a>
+                </div>
+    		</div>
 
-					    <div class="card-body">
-					        <h4 class="card-title">Mude</h4>
-					        <p>Designed a smart sound system that allows users to listen to music with ease</p>
-					    </div>
-					</div>
-				</div>
+    		<!-- Mude -->
+    		<div class="row">
+    			<div class="col-sm-6">
+    				<img src="img/mude.png">
+    			</div>
+                <div class="col-sm-6 description-right">
+                    <h2>Mude</h2>
+                    <p>Designed a smart sound system that allows users to listen to music with ease.</p>
+                    <a href="https://github.com/leoybkim/Mude" class="btn btn-cyan" target="_blank">View More</a>
+                </div>
 			</div>
 		</div>
 
 		<div id="contact" class="padded-section">
 			<div class="container">
-			    <div class="row justify-content-center">
-			        <div class="col-md-8 col-sm-12">
+			    <div class="row justify-content-center contact-card">
+			        <div class="col-md-6">
 			            <div class="card wow fadeInRight" data-wow-delay="0.3s">
 			                <div class="card-body z-depth-2">
 			                    <form role="form" method="post" action="https://formspree.io/tara.yuen@uwaterloo.ca">
-			                        <h1>Contact</h1>
 
 			                        <p>If you'd like to get in touch with me, shoot me a message!</p>
 
@@ -240,26 +207,20 @@
 			                        </div>
 
 			                        <div class="md-form">
-			                            <i class="fa fa-pencil prefix grey-text"></i>
+			                            <i class="fas fa-pencil-alt prefix grey-text"></i>
 			                            <textarea name="comment" type="text" id="form8" class="md-textarea" style="height: 100px"></textarea>
 			                            <label for="form8">Your message</label>
 			                        </div>
 
 			                        <div class="text-center">
-			                            <button type="submit" value="Send" class="btn btn-danger">Send <i class="fa fa-paper-plane-o ml-1"></i></button>
+			                            <button type="submit" value="Send" class="btn btn-cyan">Send <i class="fas fa-paper-plane ml-1"></i></button>
 			                        </div>
 
 			                        <input type="hidden" name="_subject" value="Website Contact Submission" />
-              						<input type="hidden" name="_next" value="http://tarayuen.me/thanks.html" />
+              						<input type="hidden" name="_next" value="//tarayuen.me/thanks.html" />
 			                    </form>
 			                    <!-- <hr> -->
-			                    <div id="contact-icons" class="d-flex justify-content-center flex-wrap">
-			                    	<a target="_blank" href="tel:+17782428804" title="Cell"  rel="nofollow"><i class="fa fa-phone"></i></a>
-                    				<a target="_blank" href="mailto:tara.yuen@uwaterloo.ca" rel="nofollow"><i class="fa fa-envelope"></i></a>
-                    				<a target="_blank" href="https://www.linkedin.com/in/tarayuen" rel="nofollow"><i class="fa fa-linkedin"></i></a>
-                    				<a target="_blank" href="https://github.com/tarayuen" rel="nofollow"><i class="fa fa-github"></i></a>
-                    				<a target="_blank" href="resume_tarayuen.pdf" rel="nofollow"><i class="fa fa-file-text"></i></a>
-			                    </div>
+			                    
 			                </div>
 			            </div>
 			        </div>
@@ -284,7 +245,7 @@
         <!--Copyright-->
         <div class="footer-copyright">
             <div class="container-fluid">
-                Built with love and Material Design
+                Built with &hearts; and Material Design
             </div>
         </div>
         <!--/.Copyright-->

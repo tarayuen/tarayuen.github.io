@@ -1,8 +1,8 @@
-// $(window).load(function() {
-//     $(".loader").fadeOut("slow");
-// });
+$(window).on('load', function() {
+    $(".loader").fadeOut("slow");
+});
 
-// $('body').scrollspy({ target: '.navbar' })
+$('body').scrollspy({ target: '.navbar', offset: 100 })
 
 // Navbar on scroll
 $(document).scroll(function () {
@@ -17,12 +17,12 @@ $(document).scroll(function () {
 });
 
 // Smooth Scroll on clicking nav items
-$('nav a').click(function () {
-    var $href = $(this).attr('href');
-    $('body').stop().animate({
-        scrollTop: $($href).offset().top
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top -45
     }, 1000);
-    return false;
 });
 
 // back to top
@@ -32,6 +32,18 @@ $('nav a').click(function () {
 //   }, 1000);
 //   return false;
 // });
+
+// Parallaxing on scroll
+$(document).scroll(function () {
+  
+    var $top = $(window).scrollTop();
+    var $resume = $('#resume');
+    var $contact = $('#contact');
+    $('.parallax').css('background-positionY', ($top * -0.4) + 'px');
+    $resume.css('background-positionY', ($top - $resume.offset().top) * -0.4 + 'px');
+    $contact.css('background-positionY', ($top - $contact.offset().top) * -0.4 + 'px');
+
+});
 
 var app = document.getElementById('typing');
 
@@ -48,15 +60,3 @@ typewriter.pauseFor(1000)
     // .deleteChars(7)
     // .typeString('altered!')
     .start();
-
-// Parallaxing on scroll
-$(document).scroll(function () {
-  
-    var $top = $(window).scrollTop();
-    var $resume = $('#resume');
-    var $contact = $('#contact');
-    $('.parallax').css('background-positionY', ($top * -0.3) + 'px');
-    $resume.css('background-positionY', ($top - $resume.offset().top) * -0.3 + 'px');
-    $contact.css('background-positionY', ($top - $contact.offset().top) * -0.2 + 'px');
-
-});

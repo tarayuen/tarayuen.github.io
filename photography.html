@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" class="full-height">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <meta name="google-site-verification" content="0vuMI8i8_xj4Ba2s5oigEykPCSbzaZLlRiQ8SjSqUog" />
+  	<meta name="description" content="Student at the University of Waterloo studying Systems Design Engineering. Check out my personal website to learn more! Resume, Projects, Contact... From Vancouver, BC">
+  	<meta name="keywords" content="tara yuen, student, engineering, university, waterloo, vancouver">
+  	
+  	<title>Tara Yuen | Personal Website | University of Waterloo</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/flexbin.css" type="text/css" rel="stylesheet" media="all" />
+
+</head>
+
+<body>
+
+	<style type="text/css">
+        h1,
+        .text {
+            font-family: 'Roboto Condensed', sans-serif;
+            letter-spacing: 5px;
+        }
+        h1 {
+            font-size: 60px;
+        }
+        .photos {
+            padding-top: 100px;
+        }
+        .photos a:hover {
+            cursor: default;
+        }
+        .hover-container {
+            position: relative;
+        }
+        .photos img {
+            display: block;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #212121;
+            opacity: 0;
+            transition: .5s ease;
+        }
+        .overlay:hover {
+            opacity: 0.6;
+        }
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 30px;
+            opacity: 0;
+            z-index: 2;
+        }
+        .overlay:hover .text {
+            opacity: 1;
+            z-index: 2;
+        }
+    </style>
+
+	<!-- JQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap dropdown -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+	
+	<!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="www.tarayuen.me">Tara Yuen</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav nav-pills navbar-nav mr-auto">
+                    <li class="nav-item"> <!-- add class 'active' -->
+                        <a class="nav-link" href="//www.tarayuen.me#about">About <!-- <span class="sr-only">(current)</span> --></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="//www.tarayuen.me#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="//www.tarayuen.me#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="//www.tarayuen.me/photography.html">Photography</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--/.Navbar-->
+
+    <!--Mask-->
+    <div class="parallax hm-black-light photography-background" style="height: 80%">
+        <div class="full-bg-img flex-center" style="padding-top: 70px;">
+            <ul class="animated fadeInUp">
+                <li>
+                    <img src="img/tarayuen_snap.png" style="width: 50%;">
+                    <!-- <h1>TARA YUEN PHOTOGRAPHY</h1> -->
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--/.Mask-->
+
+    <div class="container">
+        <div class="photos flexbin flexbin-margin">
+            <a class="hover-container">
+                <img src="img/EastSierras.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; EAST SIERRAS</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/MarinClouds.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; MARIN HEADLANDS</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/YosemiteMirror.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; MIRROR LAKE</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/GoldenGate.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; GOLDEN GATE BRIDGE</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/Field.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; FIELD OF FLOWERS</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/Rattlesnake.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; RATTLESNAKE POINT</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/YosemiteBackpack.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; YOSEMITE</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/PointReyesElk.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; POINT REYES</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/PointReyesFlowers.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; TOMALES POINT</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/Tobermorey.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; TOBERMOREY</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/Marin.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; ABOVE THE CLOUDS</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/MarinRoad.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; MARIN HEADLANDS</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/YosemiteCliff.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; NEVADA FALLS</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/BishopSmoke.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; BISHOP</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/EastSierrasSunset.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; EAST SIERRAS</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/MonoLake.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; MONO LAKE</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/MarinHeadlands.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; MARIN HEADLANDS</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/Portrait.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; WATERLOO PARK</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/Monterey.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; MONTEREY</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/Ottawa.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; PARLIAMENT HILL</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/TrainTracks.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; UNIVERSITY OF WATERLOO</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/LandsEnd.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; LANDS END</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/YosemiteFalls.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; YOSEMITE FALLS</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/PointReyesCliff.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; POINT REYES</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/MontereyBay.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; MONTEREY BAY</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/PointReyes.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; POINT REYES</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/YosemiteWaterfall.jpg">
+                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; BRIDALVEIL FALL</div></div>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
