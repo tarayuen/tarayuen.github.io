@@ -33,67 +33,12 @@
 
     <!-- Custom styles -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet">
     <link href="css/flexbin.css" type="text/css" rel="stylesheet" media="all" />
 
 </head>
 
 <body>
-
-	<style type="text/css">
-        h1,
-        .text {
-            font-family: 'Roboto Condensed', sans-serif;
-            letter-spacing: 5px;
-        }
-        h1 {
-            font-size: 60px;
-        }
-        .photos {
-            padding-top: 100px;
-        }
-        .photos a:hover {
-            cursor: default;
-        }
-        .hover-container {
-            position: relative;
-        }
-        .photos img {
-            display: block;
-        }
-        .overlay {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100%;
-            width: 100%;
-            background-color: #212121;
-            opacity: 0;
-            transition: .5s ease;
-        }
-        .overlay:hover {
-            opacity: 0.6;
-        }
-        .text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100%;
-            text-align: center;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            color: #ffffff;
-            font-weight: bold;
-            font-size: 30px;
-            opacity: 0;
-            z-index: 2;
-        }
-        .overlay:hover .text {
-            opacity: 1;
-            z-index: 2;
-        }
-    </style>
 
 	<!-- JQuery -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -109,7 +54,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
 
     <!-- SCRIPTS -->
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
 	
 	<!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
@@ -151,115 +96,152 @@
     </div>
     <!--/.Mask-->
 
+    <div>
+        <div id="ninja-slider">
+            <div class="slider-inner">
+                <ul>
+                    <li><a class="ns-img" href="img/EastSierras.jpg"></a></li>
+                    <li><a class="ns-img" href="img/MarinClouds.jpg"></a></li>
+                    <li><a class="ns-img" href="img/YosemiteMirror.jpg"></a></li>
+                    <li><a class="ns-img" href="img/GoldenGate.jpg"></a></li>
+                    <li><a class="ns-img" href="img/Field.jpg"></a></li>
+                    <li><a class="ns-img" href="img/Rattlesnake.jpg"></a></li>
+                    <li><a class="ns-img" href="img/Monterey.jpg"></a></li>
+                    <li><a class="ns-img" href="img/PointReyesElk.jpg"></a></li>
+                    <li><a class="ns-img" href="img/PointReyesFlowers.jpg"></a></li>
+                    <li><a class="ns-img" href="img/Tobermorey.jpg"></a></li>
+                    <li><a class="ns-img" href="img/Marin.jpg"></a></li>
+                    <li><a class="ns-img" href="img/MarinRoad.jpg"></a></li>
+                    <li><a class="ns-img" href="img/YosemiteCliff.jpg"></a></li>
+                    <li><a class="ns-img" href="img/Ottawa.jpg"></a></li>
+                    <li><a class="ns-img" href="img/EastSierrasSunset.jpg"></a></li>
+                    <li><a class="ns-img" href="img/MonoLake.jpg"></a></li>
+                    <li><a class="ns-img" href="img/MarinHeadlands.jpg"></a></li>
+                    <li><a class="ns-img" href="img/TrainTracks.jpg"></a></li>
+                    <li><a class="ns-img" href="img/YosemiteBackpack.jpg"></a></li>
+                    <li><a class="ns-img" href="img/YosemiteWaterfall.jpg"></a></li>
+                    <li><a class="ns-img" href="img/Portrait.jpg"></a></li>
+                    <li><a class="ns-img" href="img/LandsEnd.jpg"></a></li>
+                    <li><a class="ns-img" href="img/YosemiteFalls.jpg"></a></li>
+                    <li><a class="ns-img" href="img/PointReyesCliff.jpg"></a></li>
+                    <li><a class="ns-img" href="img/MontereyBay.jpg"></a></li>
+                    <li><a class="ns-img" href="img/PointReyes.jpg"></a></li>
+                    <li><a class="ns-img" href="img/BishopSmoke.jpg"></a></li>
+                </ul>
+                <div id="fsBtn" class="fs-icon" title="Expand/Close"></div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <div class="photos flexbin flexbin-margin">
             <a class="hover-container">
                 <img src="img/EastSierras.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; EAST SIERRAS</div></div>
+                <div onclick="lightbox(0)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; EAST SIERRAS</div></div>
             </a>
             <a class="hover-container">
                 <img src="img/MarinClouds.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; MARIN HEADLANDS</div></div>
+                <div onclick="lightbox(1)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; MARIN HEADLANDS</div></div>
             </a>
             <a class="hover-container">
                 <img src="img/YosemiteMirror.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; MIRROR LAKE</div></div>
+                <div onclick="lightbox(2)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; MIRROR LAKE</div></div>
             </a>
             <a class="hover-container">
                 <img src="img/GoldenGate.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; GOLDEN GATE BRIDGE</div></div>
+                <div onclick="lightbox(3)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; GOLDEN GATE BRIDGE</div></div>
             </a>
             <a class="hover-container">
                 <img src="img/Field.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; FIELD OF FLOWERS</div></div>
+                <div onclick="lightbox(4)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; FIELD OF FLOWERS</div></div>
             </a>
             <a class="hover-container">
                 <img src="img/Rattlesnake.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; RATTLESNAKE POINT</div></div>
-            </a>
-            <a class="hover-container">
-                <img src="img/YosemiteBackpack.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; YOSEMITE</div></div>
-            </a>
-            <a class="hover-container">
-                <img src="img/PointReyesElk.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; POINT REYES</div></div>
-            </a>
-            <a class="hover-container">
-                <img src="img/PointReyesFlowers.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; TOMALES POINT</div></div>
-            </a>
-            <a class="hover-container">
-                <img src="img/Tobermorey.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; TOBERMOREY</div></div>
-            </a>
-            <a class="hover-container">
-                <img src="img/Marin.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; ABOVE THE CLOUDS</div></div>
-            </a>
-            <a class="hover-container">
-                <img src="img/MarinRoad.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; MARIN HEADLANDS</div></div>
-            </a>
-            <a class="hover-container">
-                <img src="img/YosemiteCliff.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; NEVADA FALLS</div></div>
-            </a>
-            <a class="hover-container">
-                <img src="img/BishopSmoke.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; BISHOP</div></div>
-            </a>
-            <a class="hover-container">
-                <img src="img/EastSierrasSunset.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; EAST SIERRAS</div></div>
-            </a>
-            <a class="hover-container">
-                <img src="img/MonoLake.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; MONO LAKE</div></div>
-            </a>
-            <a class="hover-container">
-                <img src="img/MarinHeadlands.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; MARIN HEADLANDS</div></div>
-            </a>
-            <a class="hover-container">
-                <img src="img/Portrait.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; WATERLOO PARK</div></div>
+                <div onclick="lightbox(5)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; RATTLESNAKE POINT</div></div>
             </a>
             <a class="hover-container">
                 <img src="img/Monterey.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; MONTEREY</div></div>
+                <div onclick="lightbox(6)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; MONTEREY</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/PointReyesElk.jpg">
+                <div onclick="lightbox(7)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; POINT REYES</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/PointReyesFlowers.jpg">
+                <div onclick="lightbox(8)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; TOMALES POINT</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/Tobermorey.jpg">
+                <div onclick="lightbox(9)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; TOBERMOREY</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/Marin.jpg">
+                <div onclick="lightbox(10)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; ABOVE THE CLOUDS</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/MarinRoad.jpg">
+                <div onclick="lightbox(11)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; MARIN HEADLANDS</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/YosemiteCliff.jpg">
+                <div onclick="lightbox(12)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; NEVADA FALLS</div></div>
             </a>
             <a class="hover-container">
                 <img src="img/Ottawa.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; PARLIAMENT HILL</div></div>
+                <div onclick="lightbox(13)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; PARLIAMENT HILL</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/EastSierrasSunset.jpg">
+                <div onclick="lightbox(14)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; EAST SIERRAS</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/MonoLake.jpg">
+                <div onclick="lightbox(15)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; MONO LAKE</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/MarinHeadlands.jpg">
+                <div onclick="lightbox(16)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; MARIN HEADLANDS</div></div>
             </a>
             <a class="hover-container">
                 <img src="img/TrainTracks.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; UNIVERSITY OF WATERLOO</div></div>
+                <div onclick="lightbox(17)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; UNIVERSITY OF WATERLOO</div></div>
             </a>
             <a class="hover-container">
-                <img src="img/LandsEnd.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; LANDS END</div></div>
-            </a>
-            <a class="hover-container">
-                <img src="img/YosemiteFalls.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; YOSEMITE FALLS</div></div>
-            </a>
-            <a class="hover-container">
-                <img src="img/PointReyesCliff.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; POINT REYES</div></div>
-            </a>
-            <a class="hover-container">
-                <img src="img/MontereyBay.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; MONTEREY BAY</div></div>
-            </a>
-            <a class="hover-container">
-                <img src="img/PointReyes.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; POINT REYES</div></div>
+                <img src="img/YosemiteBackpack.jpg">
+                <div onclick="lightbox(18)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; YOSEMITE</div></div>
             </a>
             <a class="hover-container">
                 <img src="img/YosemiteWaterfall.jpg">
-                <div class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; BRIDALVEIL FALL</div></div>
+                <div onclick="lightbox(19)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; BRIDALVEIL FALL</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/Portrait.jpg">
+                <div onclick="lightbox(20)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; WATERLOO PARK</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/LandsEnd.jpg">
+                <div onclick="lightbox(21)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; LANDS END</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/YosemiteFalls.jpg">
+                <div onclick="lightbox(22)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; YOSEMITE FALLS</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/PointReyesCliff.jpg">
+                <div onclick="lightbox(23)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; POINT REYES</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/MontereyBay.jpg">
+                <div onclick="lightbox(24)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; MONTEREY BAY</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/PointReyes.jpg">
+                <div onclick="lightbox(25)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; POINT REYES</div></div>
+            </a>
+            <a class="hover-container">
+                <img src="img/BishopSmoke.jpg">
+                <div onclick="lightbox(26)" class="overlay"><div class="text"><i class="material-icons">location_on</i>&nbsp; BISHOP</div></div>
             </a>
         </div>
     </div>
