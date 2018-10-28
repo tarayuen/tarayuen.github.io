@@ -73,7 +73,7 @@ footer.page-footer {
 }
 
 .view.parallax {
-    background: url("../img/tree.jpg")no-repeat center center fixed;
+    background: url("../img/peyto-crop.jpg")no-repeat 75% 70% fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -134,34 +134,35 @@ main h1 {
 }
 
 #contact-icons a {
-    margin: 15px;
-    color: #000000;
-}
-
-#contact-icons a {
-   width: 50px;
-   height: 50px;
-   background-color: #00bcd4;
-   border-radius: 50%;
-   box-shadow: 0 2px 5px 0 #9E9E9E;
-   
-   line-height: 50px;
-   color: white;
-   text-align: center;
-   transition: all 0.2s ease-in-out;
+    margin: 10px;
+    margin-top: 30px;
+    color: #FFFFFF;
+    width: 30px;
+    height: 30px;
+    background-color: #9e9e9e;
+    border-radius: 50%;
+    /*box-shadow: 0 2px 5px 0 #9E9E9E;*/
+    line-height: 30px;
+    color: white;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
 }
 
 #contact-icons a:hover {
-   background-color: #00E5FF;
-   box-shadow: 0 4px 10px 0 #9E9E9E;
-   transform: scale(1.025);
+    background-color: #00bcd4;
+    box-shadow: 0 4px 10px 0 #9E9E9E;
+    transform: scale(1.025);
 }
 
 /*Resume*/
 
 #resume {
     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../img/sailing.jpg");
-    height: 300px; 
+    height: 300px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
 }
 
 #resume .row {
@@ -201,6 +202,11 @@ main h1 {
     margin-left: 0px;
 }
 
+#sprint-questions th,
+#sprint-questions td {
+    font-size: 13px;
+}
+
 /*Contact*/
 
 #contact {
@@ -225,7 +231,7 @@ main h1 {
 }
 
 .contact-card {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 input[type=text]:focus:not([readonly]) + label,
@@ -243,12 +249,26 @@ textarea.md-textarea:focus:not([readonly]) {
 /*Footer*/
 
 footer img {
-	width: 10%;
+	width: 8%;
 	border-radius: 50%;
 	margin-bottom: 15px;
 }
 
+footer #footer-icons a {
+    color: #B2EBF2;
+    margin: 0 10px 0 10px;
+}
+footer #footer-icons a:hover {
+    color: #212121;
+    margin: 0 10px 0 10px;
+}
+
 /*Parallax*/
+
+#typing-section {
+    text-align: left;
+    margin-left: -30%;
+}
 
 #resume,
 #contact {
@@ -265,7 +285,22 @@ footer img {
 /*Tablet Screens*/
 
 @media screen and (max-width: 1024px) {
-	.padded-section {
+    .view.parallax {
+        background: url("../img/peyto.jpg")no-repeat 75% 70% fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+	#typing-section {
+        text-align: left;
+        margin-left: 0;
+        margin-bottom: 60%;
+        padding: 0 20px 0 20px;
+    }
+
+    .padded-section {
 		padding: 40px 5px 10px 5px;
 	}
 
@@ -277,8 +312,12 @@ footer img {
         font-size: 12px;
     }
 
+    .contact-card {
+        margin-top: 15%;
+    }
+
     #contact-icons a {
-        font-size: 10px;
+        font-size: 15px;
         width: 30px;
         height: 30px;
         line-height: 30px;
@@ -320,6 +359,21 @@ footer img {
 /*Phone Screens*/
 
 @media screen and (max-width: 480px) {
+    .view.parallax {
+        background: url("../img/peyto.jpg")no-repeat 75% 70% fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #typing-section {
+        text-align: left;
+        margin-left: 0;
+        margin-bottom: 80%;
+        padding: 0 20px 0 20px;
+    }
+
     .padded-section {
         padding: 40px 5px 10px 5px;
     }
@@ -340,8 +394,12 @@ footer img {
         padding: 40px 0px 10px 0px;
     }
 
+    .contact-card {
+        margin-top: 10%;
+    }
+
     #contact-icons a {
-        font-size: 10px;
+        font-size: 15px;
         width: 30px;
         height: 30px;
         line-height: 30px;

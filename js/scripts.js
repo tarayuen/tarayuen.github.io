@@ -36,12 +36,12 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 // Parallaxing on scroll
 $(document).scroll(function () {
   
-    var $top = $(window).scrollTop();
+    $top = $(window).scrollTop();
     var $resume = $('#resume');
-    var $contact = $('#contact');
+    // var $contact = $('#contact');
     $('.parallax').css('background-positionY', ($top * -0.4) + 'px');
     $resume.css('background-positionY', ($top - $resume.offset().top) * -0.4 + 'px');
-    $contact.css('background-positionY', ($top - $contact.offset().top) * -0.4 + 'px');
+    // $contact.css('background-positionY', ($top - $contact.offset().top) * -0.4 + 'px');
 
 });
 

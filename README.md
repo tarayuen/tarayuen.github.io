@@ -1,5 +1,5 @@
 # Tara Yuen
 
-*Photographer, Designer, & Future Engineer*
+*Product Manager, Photographer, & Aspiring Engineer*
 
-This is my personal website! Check it out at https://www.tarayuen.me
+This is my personal website! Check it out at www.tarayuen.com

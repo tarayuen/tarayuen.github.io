@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" class="full-height">
+
+<head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119939612-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-119939612-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Tara Yuen | Product Manager | Personal Website | University of Waterloo</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="//www.tarayuen.com">Tara Yuen</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav nav-pills navbar-nav mr-auto">
+                    <li class="nav-item"> <!-- add class 'active' -->
+                        <a class="nav-link" href="//www.tarayuen.com/#about">About <!-- <span class="sr-only">(current)</span> --></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="//www.tarayuen.com/design.html">Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="//www.tarayuen.com/photography.html">Photography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="//www.tarayuen.com/resume_tarayuen.pdf">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="//www.tarayuen.com/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <span class="navbar-text white-text">
+                    <a target="_blank" href="https://www.linkedin.com/in/tarayuen" rel="nofollow"><i class="fab fa-linkedin fa-lg" style="color:white"></i></a>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <!--/.Navbar-->
+
+	<!--Carousel Wrapper-->
+    <div id="carousel-example-3" class="carousel slide carousel-fade white-text" data-ride="carousel" data-interval="false">
+
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+
+            <div class="carousel-item active view hm-black-light" style="background-image: url('img/abc.svg'); background-repeat: no-repeat; background-size: cover;">
+                <!-- Caption -->
+                <div class="full-bg-img flex-center white-text">
+                    <ul class="animated fadeIn col-md-12">
+                        <li>
+                            <h1 class="h1-responsive" style="font-size: 50px; font-weight: bold;">Always Be Conducting</h1>
+                        </li>
+                        <li>
+                            <p>A product that allows conductors to hear what music sounds like without an orchestra present</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.Caption -->
+
+            </div>
+
+        </div>
+        <!--/.Slides-->
+
+    </div>
+    <!--/.Carousel Wrapper-->
+
+    <!-- Main Content -->
+    <main>
+    	<div class="container project">
+    		<h2>Context</h2>
+    		<p>
+    			For this project, we chose to investigate the production of sound via gesture by idealizing an orchestra as a technical black box and allowing anyone to control this synthesized orchestra using conducting gestures. Our group took a deeper look into the technology required to create a simulated orchestra, and from continuous research and discussions with conductors into understanding how conducting actually works we designed the product - <i>Always Be Conducting</i> - that alters the dynamics of music using conducting motions.
+    		</p>
+    		<h2>Research</h2>
+    		<p>
+    			From our initial user research we discovered commonalities between each of the users we interviewed about their thoughts on music and conducting. All users felt highly passionate about the music they play and/or create. Our research showed that all musicians have a desire to impose their own style on the music they interact with, even if they were not comfortable using digital tools to modify it. We learned that conductors want the capability to execute the vision of the performance they have in their heads. However, they found it challenging to create the sound they wanted, such as gathering and training enough musicians to play the parts necessary. Using this information, we began our design sprint with the focus of determining whether or not we could create an authentic conducting experience using digital technology. After some debate and further analysis, we believed that - in the time frame given and our collective level of expertise - we would not be able to create an authentic conducting experience. Our research showed that conductors each have their own variety of gestures. We decided to prioritize the most important commands to maximize instrument utility.
+    		</p>
+            <h2>Initial Design & Testing</h2>
+            <p>
+                To begin our first iteration of design we carried out a full design sprint to explore potential users, ideas, and processes.
+            </p>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="table-responsive"><table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Sprint Questions</th>
+                                <th>Findings</th>
+                            </tr>
+                        </thead>
+                        <tbody id="sprint-questions">
+                            <tr>
+                                <th scope="row">Q1. Can we create an authentic conducting experience using digital technology?</th>
+                                <td>
+                                    ?
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Q2. How can we maximize device inputs?</th>
+                                <td>
+                                    ?
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Q3. How should we prioritize the most important commands to maximize instrument utility?</th>
+                                <td>
+                                    ?
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table></div>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/sprint-map.jpg">
+                    <figcaption>Sprint map.</figcaption>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="img/sprint-1-designs.jpg">
+                    <figcaption>Lightening demos.</figcaption>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/user-testing-1-setup.jpg">
+                    <figcaption>LFP music controls.</figcaption>
+                </div>
+                <div class="col-md-8">
+                    <img src="img/user-testing-1.jpg">
+                    <figcaption>User testing.</figcaption>
+                </div>
+            </div>
+    		<p>
+                Our main objective during the first round of user testing was to observe whether or not our chosen commands and our device concept were intuitive to users. Prior to the simulation user test, we wanted to understand how users believed that such a system should work, including the gestures that they naturally connected to conducting, so that future iterations of our project can align with users’ expectations. During the simulation, we tried to teach users how to use the device and controls quickly, so their main focus could be on the music itself, and then captured their reactions to each gesture as the music played, in order to learn which actions were most valued by users. By both asking about our users’ intuitive ‘conducting’ gestures and combining this information with observations about their satisfaction with the test, we were able to better prioritize the specific gesture information that our device should attempt to capture.
+                <br><br>
+                Note: Although our low fidelity prototype (LFP) was not fully functioning, we were able to disguise our design well enough that users truly believed their movements were controlling the music. 
+            </p>
+            <div class="table-responsive"><table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Sprint Questions</th>
+                        <th>Findings</th>
+                    </tr>
+                </thead>
+                <tbody id="sprint-questions">
+                    <tr>
+                        <th scope="row">Q1. Can we create an authentic conducting experience using digital technology?</th>
+                        <td>
+                            Within the given time frame and our group members’ expertise we do not believe we will be able to create a fully authentic conducting experience. Instead we created a digital conducting experience that has a limited set of actions. By prioritizing certain commands during user testing we were able to authentically replicate the most important conducting controls. Users were able to keep tempo with their right hand while controlling volume (and individual section volume) with their left. The appropriate settings were adjusted using software to replicate the change in music that would be played if a conductor was standing in front of an orchestra. This system allows the user to train and perform the movements most desired for conducting with feedback allowing them to hear their music adjustments. The users that tested our design were pleasantly surprised with the changes they were able to make to the music.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Q2. How can we maximize device inputs?</th>
+                        <td>
+                            By prioritizing specific commands in the development of our prototype, we were able to design distinct actions associated with each. While observing our users, we discovered the gaps in designated movements and new ways to fill those. For example, we initially had users raise/lower the music volume by raising/lowering their left arm. We found, however, that our first user wasn’t able to “rest” their arms while making other gestures, which meant that they had trouble keeping the volume of the music constant. We resolved this issue for the next user by incorporating palm directions (palm up to raise the volume; palm down to lower it). To adjust the volume of overall and individual sections, we utilized combinations of palm direction, vertical arm movement, and a button on the left hand to indicate both the volume command and the section that the command applied to. This system reduced the user’s restriction of movement while still allowing them to make distinct movements that could be captured for assigned music changes.
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Q3. How should we prioritize the most important commands to maximize instrument utility?</th>
+                        <td>
+                            Throughout our user testing, one of the majors points of feedback was that there was a delay between the time that the user changed their tempo with the right hand to the time that the change was reflected in the music.  Although this is also the case in real orchestras, we’ll need to ensure that we put an emphasis on ensuring the right hand movements are processed as fast as possible through the wireless sensor so that any changes in tempo are recorded in our program and we can process the changes accordingly.  Part of the problem in our user tests was due to human error and our inability to recognize small changes in tempo, but this feedback also made us think about how we will process changes in tempo in general.  It is imperative that we can process these changes quickly while also ensuring the music’s tempo changes are smooth, authentic and characteristic of a real orchestra changing tempo.
+                        </td>
+                    </tr>
+                </tbody>
+            </table></div>
+    		<h2>Iteration</h2>
+    		<p>
+    			After our first round of testing, we used the feedback we’d received and research we’d done from the first iteration of our design process to determine our next steps and the technologies that we wanted to use. Having had a deeper look into the technology required to create a simulated orchestra, and with a better understanding of how conducting actually works, we decided that we needed to narrow down our problem space. As a group, we considered three potential problem spaces: teaching right-hand and left-hand separation; allowing a conductor to practice without an orchestra; and creating music from body motion. With these spaces in mind, we took a second look at our users. Our research showed that although not all musicians are comfortable using digital tools to modify music, they have the desire to impose their own style on the music they interact with. One interviewee in particular noted that, as a conductor, his job was to determine three things: What a piece of music sounds like; what it should sound like; and what it can sound like. With this composite of user traits in mind, we re-defined the problem space of interest to: <strong>“Build an instrument which allows an experienced conductor or musician to figure out what a piece of music <i>can</i> sound like, by modifying music using physical actions associated with conducting without needing an orchestra present.”</strong>
+                <br><br>
+                From this redefined problem space, we set requirements for what our “instrument” design would need to do in order to allow users to experiment with and find out what music <i>can</i> sound like. Since conductors have various techniques and gestures, users will need the freedom to assign their own movements to specific commands. Our product will need to be customizable for each of our unique users and suit their specific needs. Design options were discussed and selected based on the usability, availability, cost, and ability to get to the next iteration stage of the project. Our group carried out extensive research by talking to users, peers, taking notes on existing conducting devices, mapping techniques, and ergonomic functionality. Decisions on the best options were made based off this research as well as user testing to design the best system for our users. 
+                <br><br>
+                After the second round of testing, we analyzed the design functions required and the options for individual components. Users should have the ability record and assign functions to gestures, and our product should be able to recognize when a command is being used and impact the music appropriately. This led us to using a software interface to setup commands that would output music from Ableton Live as well as provide visual feedback for the conductors. Users will need a product that allows them to move around freely and execute the conducting commands they’re familiar with which led us to a wireless design. Since conductors use auditory feedback to make adjustments as needed, our system needs to be in real time. Accuracy is also important for identifying commands as well as making the respective music changes. Our most important insight from the second iteration was that Wekinator should be used to account for the variance from gesture to gesture, eliminate the button indication, and provide real-time feedback.
+    		</p>
+            <h2>Final Design</h2>
+            <p>
+                The final design of ABC is a device that addresses the foundational issues we found our users had in the problem space. While there is a vast expanse of room for improvement the proof of concept and development of techniques is a valuable beginning to the design of the ABC device. 
+                <br><br>
+                In terms of hardware, our final design contains two gloves, each mounted with an IMU, a power source in the form of a rechargeable battery pack, a microcontroller to process IMU input, and an XBee communication module. Additionally the left hand glove contains a flex sensor to detect a user's finger bending. The ABC base module is connected to the user’s computer using a USB cord and contains a microcontroller and an XBee communication module. In our prototype each device was composed of parts, mounted on a Teensy to XBee adapter board which modulates power input and links the microcontroller to the XBee module. Our final design varies slightly from our final prototyped product as time limitations restricted our ability to complete the desired hardware and software features. One of these ways is that our final design would contain motion differentiation to allow for conductors to identify which grouping of tracks (representing sections of instruments) they wish a specific instruction to go to. 
+                <br><br>
+                To utilize this hardware setup, a system was designed that would interpret the motions of each hand using the local microcontroller. It would then transmit the required values to the ABC base module for analysis and conversion to MIDI messages which are then sent to the computer. The right hand identifies a change in direction, where each change signifies a beat. The time between beats is found and translated into beats per minute, a standard in musical tempo. Alternatively, the left hand identifies the motion of the hand while the flex sensor is unbent, which signifies to the software that the user wants to make a modification to the music. This is based off of the theory that when conductors are making a deliberate motion their fingers will be in a different orientation than when in the default resting position. The volume modification is then based off of the movement of the hand in an upward or downward direction. To modify the dynamics of a specific track, specific modifications to the basic motions would allow the user to select the track(s) they wish to apply their motions to. This selection and its impact would be displayed on ABC’s visual interface.
+                <br><br>
+                This visual interface is modelled to be an equivalent to the response a conductor would receive from visually observing a musician. The interface (shown below) displays the tempo and volumes as communicated by incoming MIDI messages. Additionally, in the visual interface users would have the option to modify or assign a variety of motions to influence the music in different ways.
+            </p>
+            <img src="img/final-design.jpg">
+            <figcaption>Final product design.</figcaption>
+    		<h2>Future Work</h2>
+            <p>
+                If the project were to continue there are some specific next steps which would be taken next in order to greatly improve our design. The first of these is to improve the ergonomics of our device. The current prototype fits only a certain hand size and is complicated to put on and take off. Making the whole system more compact and ergonomic would greatly increase the usability. Next we want to leverage machine learning techniques for gesture recognition in order to better interpret what a user is trying to accomplish. The current gesture recognition is something the group wrote as a temporary solution but was never intended to be a permanent solution. Wekinator offers a free and proven software platform for accomplishing what we need and would help our design become much smarter in how it interprets the user. A linear regression analysis was performed on user testing data and it was determined that the amount of variance between gestures was high, but the data could potentially be used to train a supervised learning algorithm which would allow us to classify the user’s gestures even with the high level of variance discovered. Another important next step is testing with our target audience of actual conductors. We performed lots of user tests but they were mostly on users who had no previous conducting experience which was not the intended audience for our design. We could be missing some very important feedback on our design because we have not yet been able to test with the people who could provide us with the most relevant insight. Finally the functions which the device is capable of should be expanded in order to create a much more authentic conducting experience. These extra functions would be adding section control, affecting note length, and other potential improvements as suggested by the tests with conductors.
+
+            </p>
+    	</div>
+    </main>
+    <!-- /.Main Content -->
+
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only">
+
+        <!--Call to action-->
+        <div class="call-to-action">
+            <!-- <h4 class="mb-5"></h4> -->
+            <img src="img/profile.jpg">
+            <a href="index.html"><h5>Tara Yuen</h5></a>
+        </div>
+        <!--/.Call to action-->
+
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div id="footer-icons" class="container-fluid">
+                <a target="_blank" href="tel:+17782428804" title="Cell: 778-242-8804"  rel="nofollow"><i class="fas fa-phone fa-sm"></i></a>
+                <a target="_blank" href="mailto:tara.yuen@uwaterloo.ca" title="Email: tara.yuen@uwaterloo.ca" rel="nofollow"><i class="fas fa-envelope fa-sm"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/tarayuen" rel="nofollow"><i class="fab fa-linkedin fa-sm"></i></a>
+                <a target="_blank" href="https://github.com/tarayuen" rel="nofollow"><i class="fab fa-github fa-sm"></i></a>
+            </div>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap dropdown -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript">
+        // Navbar on scroll
+        $(document).scroll(function () {
+          
+            var $top = $(window).scrollTop();
+            if ($top > 50) {
+                $(".scrolling-navbar").addClass("top-nav-collapse");
+            } else {
+                $(".scrolling-navbar").removeClass("top-nav-collapse");
+            }
+
+        });
+    </script>
+
+</body>
+
+</html>
