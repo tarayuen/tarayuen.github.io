@@ -286,7 +286,7 @@ footer #footer-icons a:hover {
 
 @media screen and (max-width: 1024px) {
     .view.parallax {
-        background: url("../img/peyto.jpg")no-repeat 75% 70% fixed;
+        background: url("../img/peyto.JPG")no-repeat 75% 70% fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -360,7 +360,7 @@ footer #footer-icons a:hover {
 
 @media screen and (max-width: 480px) {
     .view.parallax {
-        background: url("../img/peyto.jpg")no-repeat 75% 70% fixed;
+        background: url("../img/peyto.JPG")no-repeat 75% 70% fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
