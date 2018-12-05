@@ -37,10 +37,10 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 $(document).scroll(function () {
   
     $top = $(window).scrollTop();
-    var $resume = $('#resume');
+    // var $resume = $('#resume');
     // var $contact = $('#contact');
     $('.parallax').css('background-positionY', ($top * -0.4) + 'px');
-    $resume.css('background-positionY', ($top - $resume.offset().top) * -0.4 + 'px');
+    // $resume.css('background-positionY', ($top - $resume.offset().top) * -0.4 + 'px');
     // $contact.css('background-positionY', ($top - $contact.offset().top) * -0.4 + 'px');
 
 });
