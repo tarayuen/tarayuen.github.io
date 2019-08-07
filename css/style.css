@@ -20,17 +20,17 @@ body {
 }
 
 .top-nav-collapse {
-    background-color: #00bcd4; /*cyan*/
+    background-color: #FFFFFF; /*cyan*/
 }
 
 footer.page-footer {
-    background-color: #00bcd4;
+    background-color: #00BCD4;
     margin-top: -1px;
 }
 
 @media only screen and (max-width: 768px) {
     .navbar {
-        background-color: #00bcd4;
+        background-color: #212121;
     }
 }
 .navbar .btn-group .dropdown-menu a:hover {
@@ -41,7 +41,15 @@ footer.page-footer {
 }
 
 .nav-pills .nav-link.active, .show>.nav-pills .nav-link {
-	background-color: #4dd0e1;
+	background-color: #80deea;
+}
+
+.top-nav-white-icon a {
+    color: #FFFFFF;
+}
+
+.top-nav-collapse-white-icon a {
+    color: #212121;
 }
 
 /*Loader*/
@@ -149,7 +157,7 @@ main h1 {
 }
 
 #contact-icons a:hover {
-    background-color: #00bcd4;
+    background-color: #0097A7;
     box-shadow: 0 4px 10px 0 #9E9E9E;
     transform: scale(1.025);
 }
@@ -222,7 +230,6 @@ main h1 {
 	text-align: center;
 	margin-top: 10px;
 	margin-bottom: 20px;
-    font-weight: bold;
 }
 
 .md-form .prefix {
@@ -236,13 +243,13 @@ main h1 {
 
 input[type=text]:focus:not([readonly]) + label,
 textarea.md-textarea:focus:not([readonly]) + label {
-    color: #00bcd4; 
+    color: #0097A7; 
 }
 
 input[type=text]:focus:not([readonly]),
 textarea.md-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #00bcd4;
-    box-shadow: 0 1px 0 0 #00bcd4; 
+    border-bottom: 1px solid #0097A7;
+    box-shadow: 0 1px 0 0 #0097A7; 
 }
 
 

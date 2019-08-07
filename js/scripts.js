@@ -10,8 +10,12 @@ $(document).scroll(function () {
     var $top = $(window).scrollTop();
     if ($top > 50) {
         $(".scrolling-navbar").addClass("top-nav-collapse");
+        $(".scrolling-navbar").removeClass("navbar-dark");
+        $(".scrolling-navbar").addClass("navbar-light");
     } else {
         $(".scrolling-navbar").removeClass("top-nav-collapse");
+        $(".scrolling-navbar").removeClass("navbar-light");
+        $(".scrolling-navbar").addClass("navbar-dark");
     }
 
 });
