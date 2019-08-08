@@ -10,7 +10,7 @@ body {
 }
 
 .navbar {
-    background-color: transparent;
+    background-color:transparent;
 }
 
 .scrolling-navbar {
@@ -29,9 +29,9 @@ footer.page-footer {
 }
 
 @media only screen and (max-width: 768px) {
-    .navbar {
+    /*.navbar {
         background-color: #212121;
-    }
+    }*/
 }
 .navbar .btn-group .dropdown-menu a:hover {
     color: #000 !important;
@@ -40,8 +40,11 @@ footer.page-footer {
     color: #fff !important;
 }
 
-.nav-pills .nav-link.active, .show>.nav-pills .nav-link {
+/*.nav-pills .nav-link.active, .show>.nav-pills .nav-link {
 	background-color: #80deea;
+}*/
+.nav-pills .nav-link.active {
+    background-color: #80deea;
 }
 
 .top-nav-white-icon a {
@@ -160,6 +163,10 @@ main h1 {
     background-color: #0097A7;
     box-shadow: 0 4px 10px 0 #9E9E9E;
     transform: scale(1.025);
+}
+
+.line-space p {
+    line-height: 2;
 }
 
 /*Resume*/
