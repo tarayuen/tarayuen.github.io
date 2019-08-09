@@ -81,8 +81,8 @@
                         <a class="nav-link" href="//www.tarayuen.com/contact.html">CONTACT</a>
                     </li>
                 </ul>
-                <span class="navbar-text white-text">
-                    <a target="_blank" href="https://www.linkedin.com/in/tarayuen" rel="nofollow"><i class="fab fa-linkedin fa-lg" style="color:white"></i></a>
+                <span class="navbar-text white-text white-icon top-nav-white-icon">
+                    <a target="_blank" href="https://www.linkedin.com/in/tarayuen" rel="nofollow"><i class="fab fa-linkedin fa-lg"></i></a>
                 </span>
             </div>
         </div>
@@ -238,12 +238,20 @@
     <script type="text/javascript">
         // Navbar on scroll
         $(document).scroll(function () {
-          
+  
             var $top = $(window).scrollTop();
             if ($top > 50) {
                 $(".scrolling-navbar").addClass("top-nav-collapse");
+                $(".scrolling-navbar").removeClass("navbar-dark");
+                $(".scrolling-navbar").addClass("navbar-light");
+                $(".white-icon").addClass("top-nav-collapse-white-icon");
+                $(".white-icon").removeClass("top-nav-white-icon");
             } else {
                 $(".scrolling-navbar").removeClass("top-nav-collapse");
+                $(".scrolling-navbar").removeClass("navbar-light");
+                $(".scrolling-navbar").addClass("navbar-dark");
+                $(".white-icon").addClass("top-nav-white-icon");
+                $(".white-icon").removeClass("top-nav-collapse-white-icon");
             }
 
         });
